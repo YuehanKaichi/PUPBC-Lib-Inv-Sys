@@ -25,6 +25,7 @@ Partial Class hbtnForm
         Me.dt1 = New System.Windows.Forms.DataGridView()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.numBooks = New System.Windows.Forms.Label()
         CType(Me.dt1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -38,7 +39,7 @@ Partial Class hbtnForm
         Me.dt1.Name = "dt1"
         Me.dt1.ReadOnly = True
         Me.dt1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
-        Me.dt1.Size = New System.Drawing.Size(905, 424)
+        Me.dt1.Size = New System.Drawing.Size(908, 444)
         Me.dt1.TabIndex = 1
         '
         'Button6
@@ -62,23 +63,37 @@ Partial Class hbtnForm
         Me.Button1.Text = "Refresh"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'numBooks
+        '
+        Me.numBooks.AutoSize = True
+        Me.numBooks.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.numBooks.Location = New System.Drawing.Point(80, 48)
+        Me.numBooks.Name = "numBooks"
+        Me.numBooks.Size = New System.Drawing.Size(21, 24)
+        Me.numBooks.TabIndex = 4
+        Me.numBooks.Text = "0"
+        '
         'hbtnForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(904, 528)
+        Me.ClientSize = New System.Drawing.Size(904, 544)
+        Me.Controls.Add(Me.numBooks)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.dt1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "hbtnForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "hbtnForm"
         CType(Me.dt1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents dt1 As DataGridView
     Friend WithEvents Button6 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents numBooks As Label
 End Class

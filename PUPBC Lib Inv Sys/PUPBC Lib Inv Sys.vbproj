@@ -119,6 +119,12 @@
     <Compile Include="addForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="cpassForm.Designer.vb">
+      <DependentUpon>cpassForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cpassForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="dBoard.Designer.vb">
       <DependentUpon>dBoard.vb</DependentUpon>
     </Compile>
@@ -138,6 +144,18 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hbtnForm.Designer.vb">
+      <DependentUpon>hbtnForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hbtnForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -153,13 +171,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="profForm.Designer.vb">
+      <DependentUpon>profForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="profForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Round Text Box.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="roundPictureBox.vb">
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="addForm.resx">
       <DependentUpon>addForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cpassForm.resx">
+      <DependentUpon>cpassForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dBoard.resx">
       <DependentUpon>dBoard.vb</DependentUpon>
@@ -170,11 +200,20 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hbtnForm.resx">
+      <DependentUpon>hbtnForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profForm.resx">
+      <DependentUpon>profForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
