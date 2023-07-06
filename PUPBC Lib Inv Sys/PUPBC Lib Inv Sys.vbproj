@@ -119,6 +119,12 @@
     <Compile Include="addForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="borrowButtonFunc.Designer.vb">
+      <DependentUpon>borrowButtonFunc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="borrowButtonFunc.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="cpassForm.Designer.vb">
       <DependentUpon>cpassForm.vb</DependentUpon>
     </Compile>
@@ -129,6 +135,12 @@
       <DependentUpon>dBoard.vb</DependentUpon>
     </Compile>
     <Compile Include="dBoard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteFunc.Designer.vb">
+      <DependentUpon>deleteFunc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deleteFunc.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.vb">
@@ -144,10 +156,10 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="borrowFunc.Designer.vb">
+      <DependentUpon>borrowFunc.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form3.vb">
+    <Compile Include="borrowFunc.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="hbtnForm.Designer.vb">
@@ -183,10 +195,19 @@
     <Compile Include="roundPictureBox.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Update.Designer.vb">
+      <DependentUpon>Update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Update.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="addForm.resx">
       <DependentUpon>addForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="borrowButtonFunc.resx">
+      <DependentUpon>borrowButtonFunc.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cpassForm.resx">
       <DependentUpon>cpassForm.vb</DependentUpon>
@@ -194,14 +215,17 @@
     <EmbeddedResource Include="dBoard.resx">
       <DependentUpon>dBoard.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="deleteFunc.resx">
+      <DependentUpon>deleteFunc.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="borrowFunc.resx">
+      <DependentUpon>borrowFunc.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hbtnForm.resx">
       <DependentUpon>hbtnForm.vb</DependentUpon>
@@ -214,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="profForm.resx">
       <DependentUpon>profForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

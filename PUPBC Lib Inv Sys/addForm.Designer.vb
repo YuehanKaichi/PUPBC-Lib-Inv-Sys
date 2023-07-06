@@ -35,10 +35,8 @@ Partial Class addForm
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.dpBox = New System.Windows.Forms.DateTimePicker()
-        Me.mcBox = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.idBox = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -53,28 +51,28 @@ Partial Class addForm
         '
         'tBox
         '
-        Me.tBox.Location = New System.Drawing.Point(36, 166)
+        Me.tBox.Location = New System.Drawing.Point(36, 122)
         Me.tBox.Name = "tBox"
         Me.tBox.Size = New System.Drawing.Size(221, 20)
         Me.tBox.TabIndex = 1
         '
         'aBox
         '
-        Me.aBox.Location = New System.Drawing.Point(36, 208)
+        Me.aBox.Location = New System.Drawing.Point(36, 164)
         Me.aBox.Name = "aBox"
         Me.aBox.Size = New System.Drawing.Size(221, 20)
         Me.aBox.TabIndex = 2
         '
         'qBox
         '
-        Me.qBox.Location = New System.Drawing.Point(36, 293)
+        Me.qBox.Location = New System.Drawing.Point(36, 249)
         Me.qBox.Name = "qBox"
         Me.qBox.Size = New System.Drawing.Size(221, 20)
         Me.qBox.TabIndex = 4
         '
         'nBox
         '
-        Me.nBox.Location = New System.Drawing.Point(36, 334)
+        Me.nBox.Location = New System.Drawing.Point(36, 290)
         Me.nBox.Name = "nBox"
         Me.nBox.Size = New System.Drawing.Size(221, 20)
         Me.nBox.TabIndex = 5
@@ -82,7 +80,7 @@ Partial Class addForm
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Button1.Location = New System.Drawing.Point(36, 374)
+        Me.Button1.Location = New System.Drawing.Point(36, 330)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 6
@@ -92,7 +90,7 @@ Partial Class addForm
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Button2.Location = New System.Drawing.Point(182, 374)
+        Me.Button2.Location = New System.Drawing.Point(182, 330)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 7
@@ -103,7 +101,7 @@ Partial Class addForm
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Label2.Location = New System.Drawing.Point(33, 147)
+        Me.Label2.Location = New System.Drawing.Point(33, 103)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(37, 16)
         Me.Label2.TabIndex = 8
@@ -113,7 +111,7 @@ Partial Class addForm
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Label3.Location = New System.Drawing.Point(33, 189)
+        Me.Label3.Location = New System.Drawing.Point(33, 145)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(52, 16)
         Me.Label3.TabIndex = 9
@@ -123,7 +121,7 @@ Partial Class addForm
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Label4.Location = New System.Drawing.Point(33, 233)
+        Me.Label4.Location = New System.Drawing.Point(33, 189)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(105, 16)
         Me.Label4.TabIndex = 10
@@ -133,7 +131,7 @@ Partial Class addForm
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Label5.Location = New System.Drawing.Point(33, 275)
+        Me.Label5.Location = New System.Drawing.Point(33, 231)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(65, 16)
         Me.Label5.TabIndex = 11
@@ -143,7 +141,7 @@ Partial Class addForm
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Label6.Location = New System.Drawing.Point(33, 315)
+        Me.Label6.Location = New System.Drawing.Point(33, 271)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(110, 16)
         Me.Label6.TabIndex = 12
@@ -152,29 +150,10 @@ Partial Class addForm
         'dpBox
         '
         Me.dpBox.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dpBox.Location = New System.Drawing.Point(36, 252)
+        Me.dpBox.Location = New System.Drawing.Point(36, 208)
         Me.dpBox.Name = "dpBox"
         Me.dpBox.Size = New System.Drawing.Size(221, 20)
         Me.dpBox.TabIndex = 13
-        '
-        'mcBox
-        '
-        Me.mcBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.mcBox.FormattingEnabled = True
-        Me.mcBox.Items.AddRange(New Object() {"", "T", "B"})
-        Me.mcBox.Location = New System.Drawing.Point(36, 76)
-        Me.mcBox.Name = "mcBox"
-        Me.mcBox.Size = New System.Drawing.Size(221, 21)
-        Me.mcBox.TabIndex = 14
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(36, 123)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(221, 21)
-        Me.ComboBox2.TabIndex = 15
         '
         'Label7
         '
@@ -182,19 +161,16 @@ Partial Class addForm
         Me.Label7.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.Label7.Location = New System.Drawing.Point(33, 57)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(77, 16)
+        Me.Label7.Size = New System.Drawing.Size(22, 16)
         Me.Label7.TabIndex = 16
-        Me.Label7.Text = "Main Class"
+        Me.Label7.Text = "ID"
         '
-        'Label8
+        'idBox
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Label8.Location = New System.Drawing.Point(33, 104)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(72, 16)
-        Me.Label8.TabIndex = 17
-        Me.Label8.Text = "Sub Class"
+        Me.idBox.Location = New System.Drawing.Point(36, 80)
+        Me.idBox.Name = "idBox"
+        Me.idBox.Size = New System.Drawing.Size(221, 20)
+        Me.idBox.TabIndex = 17
         '
         'addForm
         '
@@ -202,10 +178,8 @@ Partial Class addForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(283, 405)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.idBox)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.mcBox)
         Me.Controls.Add(Me.dpBox)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -241,8 +215,6 @@ Partial Class addForm
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents dpBox As DateTimePicker
-    Friend WithEvents mcBox As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
+    Friend WithEvents idBox As TextBox
 End Class

@@ -46,29 +46,27 @@ Public Class Form2
                 If (ds.Tables(0).Rows.Count > 0) Then
                     MessageBox.Show("Welcome Admin", "Welcome!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     dBoard.Show()
-                    If (rmBox.Checked) Then
-
-                    Else
-                        unText.Text = ""
-                        pwText.Text = ""
-                    End If
+         
                     Me.Hide()
                 Else
                         MessageBox.Show("Wrong Credentials", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 End If
 
                 Dim strsql As String
-                strsql = "Select id, fname, mname, sname, username, password, email from admin where username =" + unText.Text + ""
+                strsql = "Select id, fname, mname, sname, username, password, email from admin"
 
                 Dim cmd2 As New SqlCommand(strsql, con)
                 Dim myreader As SqlDataReader
                 myreader = cmd2.ExecuteReader
 
                 myreader.Read()
-
+                'NOTE!!!  try to put it inside the condition to work
                 profForm.nameBox.Text = myreader("fname")
                 profForm.emailBox.Text = myreader("email")
                 profForm.usnBox.Text = myreader("username")
+                dBoard.Label2.Text = myreader("fname")
+                dBoard.Label3.Text = myreader("id")
+
 
                 con.Close()
             End Using

@@ -15,6 +15,7 @@ Public Class addForm
             MessageBox.Show("Enter Book quantity", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         Else
             cmd.CommandType = CommandType.StoredProcedure
+            cmd.Parameters.AddWithValue("@BookID", idBox.Text)
             cmd.Parameters.AddWithValue("@bookTitle", tBox.Text)
             cmd.Parameters.AddWithValue("@bookAuthor", aBox.Text)
             cmd.Parameters.AddWithValue("@bookPublished", dpBox.Text)

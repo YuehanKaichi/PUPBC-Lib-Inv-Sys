@@ -9,6 +9,12 @@ Public Class dBoard
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Me.Close()
         Form2.Show()
+        If (Form2.rmBox.Checked) Then
+
+        Else
+            Form2.unText.Text = ""
+            Form2.pwText.Text = ""
+        End If
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs)
@@ -20,10 +26,10 @@ Public Class dBoard
         hbtnForm.MdiParent = Me
         hbtnForm.Show()
         hbtnForm.Location.Offset(165, 41)
-        profForm.Close()
+        profForm.Hide()
         hbtn.BackColor = ColorTranslator.FromOle(RGB(192, 0, 0))
         hbtn.ForeColor = Color.White
-        ab.BackColor = Color.WhiteSmoke
+        ab.BackColor = Color.LightGray
         ab.ForeColor = Color.Black
 
     End Sub
@@ -33,13 +39,15 @@ Public Class dBoard
         profForm.MdiParent = Me
         profForm.Show()
         profForm.Location.Offset(165, 41)
-        hbtnForm.Close()
+        hbtnForm.Hide()
         ab.BackColor = ColorTranslator.FromOle(RGB(192, 0, 0))
         ab.ForeColor = Color.White
-        hbtn.BackColor = Color.WhiteSmoke
+        hbtn.BackColor = Color.LightGray
         hbtn.ForeColor = Color.Black
 
     End Sub
 
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
+    End Sub
 End Class
