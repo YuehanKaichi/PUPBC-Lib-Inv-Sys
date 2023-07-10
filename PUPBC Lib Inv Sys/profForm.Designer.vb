@@ -27,12 +27,14 @@ Partial Class profForm
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.nameBox = New System.Windows.Forms.TextBox()
+        Me.fnameBox = New System.Windows.Forms.TextBox()
         Me.usnBox = New System.Windows.Forms.TextBox()
         Me.emailBox = New System.Windows.Forms.TextBox()
         Me.edtbtn = New System.Windows.Forms.Button()
         Me.cpwbtn = New System.Windows.Forms.Button()
         Me.imageBox = New PUPBC_Lib_Inv_Sys.roundPictureBox()
+        Me.mnamebox = New System.Windows.Forms.TextBox()
+        Me.lnamebox = New System.Windows.Forms.TextBox()
         CType(Me.imageBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -76,14 +78,14 @@ Partial Class profForm
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Username"
         '
-        'nameBox
+        'fnameBox
         '
-        Me.nameBox.Enabled = False
-        Me.nameBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.nameBox.Location = New System.Drawing.Point(105, 291)
-        Me.nameBox.Name = "nameBox"
-        Me.nameBox.Size = New System.Drawing.Size(263, 22)
-        Me.nameBox.TabIndex = 5
+        Me.fnameBox.Enabled = False
+        Me.fnameBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.fnameBox.Location = New System.Drawing.Point(105, 291)
+        Me.fnameBox.Name = "fnameBox"
+        Me.fnameBox.Size = New System.Drawing.Size(122, 22)
+        Me.fnameBox.TabIndex = 5
         '
         'usnBox
         '
@@ -134,16 +136,36 @@ Partial Class profForm
         Me.imageBox.TabIndex = 0
         Me.imageBox.TabStop = False
         '
+        'mnamebox
+        '
+        Me.mnamebox.Enabled = False
+        Me.mnamebox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.mnamebox.Location = New System.Drawing.Point(233, 291)
+        Me.mnamebox.Name = "mnamebox"
+        Me.mnamebox.Size = New System.Drawing.Size(81, 22)
+        Me.mnamebox.TabIndex = 10
+        '
+        'lnamebox
+        '
+        Me.lnamebox.Enabled = False
+        Me.lnamebox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.lnamebox.Location = New System.Drawing.Point(320, 291)
+        Me.lnamebox.Name = "lnamebox"
+        Me.lnamebox.Size = New System.Drawing.Size(139, 22)
+        Me.lnamebox.TabIndex = 11
+        '
         'profForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(904, 544)
+        Me.Controls.Add(Me.lnamebox)
+        Me.Controls.Add(Me.mnamebox)
         Me.Controls.Add(Me.cpwbtn)
         Me.Controls.Add(Me.edtbtn)
         Me.Controls.Add(Me.emailBox)
         Me.Controls.Add(Me.usnBox)
-        Me.Controls.Add(Me.nameBox)
+        Me.Controls.Add(Me.fnameBox)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -164,9 +186,11 @@ Partial Class profForm
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents nameBox As TextBox
+    Friend WithEvents fnameBox As TextBox
     Friend WithEvents usnBox As TextBox
     Friend WithEvents emailBox As TextBox
     Friend WithEvents edtbtn As Button
     Friend WithEvents cpwbtn As Button
+    Friend WithEvents mnamebox As TextBox
+    Friend WithEvents lnamebox As TextBox
 End Class

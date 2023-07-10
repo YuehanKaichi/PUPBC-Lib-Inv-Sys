@@ -31,6 +31,8 @@ Public Class dBoard
         hbtn.ForeColor = Color.White
         ab.BackColor = Color.LightGray
         ab.ForeColor = Color.Black
+        bb.BackColor = Color.LightGray
+        bb.ForeColor = Color.Black
 
     End Sub
 
@@ -44,10 +46,27 @@ Public Class dBoard
         ab.ForeColor = Color.White
         hbtn.BackColor = Color.LightGray
         hbtn.ForeColor = Color.Black
+        bb.BackColor = Color.LightGray
+        bb.ForeColor = Color.Black
 
+    End Sub
+    'BORROW
+    Private Sub Button1_Click_2(sender As Object, e As EventArgs) Handles bb.Click
+        Borrow.MdiParent = Me
+        Borrow.Show()
+        Borrow.Location.Offset(165, 41)
+        profForm.Hide()
+        bb.BackColor = ColorTranslator.FromOle(RGB(192, 0, 0))
+        bb.ForeColor = Color.White
+        ab.BackColor = Color.LightGray
+        ab.ForeColor = Color.Black
+        hbtn.BackColor = Color.LightGray
+        hbtn.ForeColor = Color.Black
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
+
+
 End Class

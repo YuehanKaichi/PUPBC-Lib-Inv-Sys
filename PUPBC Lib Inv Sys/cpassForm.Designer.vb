@@ -24,12 +24,10 @@ Partial Class cpassForm
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Round_Text_Box1 = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
-        Me.Round_Text_Box2 = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
-        Me.Round_Text_Box3 = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
+        Me.newPbox = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
+        Me.conPbox = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
@@ -56,33 +54,25 @@ Partial Class cpassForm
         Me.Panel1.Size = New System.Drawing.Size(242, 54)
         Me.Panel1.TabIndex = 1
         '
-        'Round_Text_Box1
+        'newPbox
         '
-        Me.Round_Text_Box1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Round_Text_Box1.Location = New System.Drawing.Point(33, 83)
-        Me.Round_Text_Box1.Name = "Round_Text_Box1"
-        Me.Round_Text_Box1.Size = New System.Drawing.Size(182, 22)
-        Me.Round_Text_Box1.TabIndex = 2
+        Me.newPbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.newPbox.Location = New System.Drawing.Point(29, 88)
+        Me.newPbox.Name = "newPbox"
+        Me.newPbox.Size = New System.Drawing.Size(182, 22)
+        Me.newPbox.TabIndex = 3
         '
-        'Round_Text_Box2
+        'conPbox
         '
-        Me.Round_Text_Box2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Round_Text_Box2.Location = New System.Drawing.Point(33, 131)
-        Me.Round_Text_Box2.Name = "Round_Text_Box2"
-        Me.Round_Text_Box2.Size = New System.Drawing.Size(182, 22)
-        Me.Round_Text_Box2.TabIndex = 3
-        '
-        'Round_Text_Box3
-        '
-        Me.Round_Text_Box3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Round_Text_Box3.Location = New System.Drawing.Point(33, 179)
-        Me.Round_Text_Box3.Name = "Round_Text_Box3"
-        Me.Round_Text_Box3.Size = New System.Drawing.Size(182, 22)
-        Me.Round_Text_Box3.TabIndex = 4
+        Me.conPbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.conPbox.Location = New System.Drawing.Point(29, 136)
+        Me.conPbox.Name = "conPbox"
+        Me.conPbox.Size = New System.Drawing.Size(182, 22)
+        Me.conPbox.TabIndex = 4
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(140, 217)
+        Me.Button1.Location = New System.Drawing.Point(136, 174)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 5
@@ -91,28 +81,18 @@ Partial Class cpassForm
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(36, 217)
+        Me.Button2.Location = New System.Drawing.Point(32, 174)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 6
         Me.Button2.Text = "Cancel"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(33, 64)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(83, 15)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "Old Password"
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(33, 114)
+        Me.Label3.Location = New System.Drawing.Point(29, 71)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(89, 15)
         Me.Label3.TabIndex = 8
@@ -122,7 +102,7 @@ Partial Class cpassForm
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(33, 161)
+        Me.Label4.Location = New System.Drawing.Point(29, 118)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(107, 15)
         Me.Label4.TabIndex = 9
@@ -132,15 +112,13 @@ Partial Class cpassForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(242, 252)
+        Me.ClientSize = New System.Drawing.Size(242, 217)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Round_Text_Box3)
-        Me.Controls.Add(Me.Round_Text_Box2)
-        Me.Controls.Add(Me.Round_Text_Box1)
+        Me.Controls.Add(Me.conPbox)
+        Me.Controls.Add(Me.newPbox)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "cpassForm"
@@ -155,12 +133,10 @@ Partial Class cpassForm
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Round_Text_Box1 As Round_Text_Box
-    Friend WithEvents Round_Text_Box2 As Round_Text_Box
-    Friend WithEvents Round_Text_Box3 As Round_Text_Box
+    Friend WithEvents newPbox As Round_Text_Box
+    Friend WithEvents conPbox As Round_Text_Box
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
 End Class

@@ -28,12 +28,12 @@ Partial Class dBoard
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.bb = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.imageBox = New PUPBC_Lib_Inv_Sys.roundPictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.ab = New System.Windows.Forms.Button()
         Me.hbtn = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.imageBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,7 +85,7 @@ Partial Class dBoard
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.LightGray
-        Me.Panel2.Controls.Add(Me.Button1)
+        Me.Panel2.Controls.Add(Me.bb)
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.imageBox)
         Me.Panel2.Controls.Add(Me.Label2)
@@ -98,6 +98,27 @@ Partial Class dBoard
         Me.Panel2.Size = New System.Drawing.Size(165, 548)
         Me.Panel2.TabIndex = 7
         '
+        'bb
+        '
+        Me.bb.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bb.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
+        Me.bb.Location = New System.Drawing.Point(0, 233)
+        Me.bb.Name = "bb"
+        Me.bb.Size = New System.Drawing.Size(165, 38)
+        Me.bb.TabIndex = 13
+        Me.bb.Text = "Borrow"
+        Me.bb.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
+        Me.Label3.Location = New System.Drawing.Point(3, 162)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(159, 16)
+        Me.Label3.TabIndex = 12
+        Me.Label3.Text = "ID"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'imageBox
         '
         Me.imageBox.Image = CType(resources.GetObject("imageBox.Image"), System.Drawing.Image)
@@ -107,6 +128,16 @@ Partial Class dBoard
         Me.imageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.imageBox.TabIndex = 11
         Me.imageBox.TabStop = False
+        '
+        'Label2
+        '
+        Me.Label2.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
+        Me.Label2.Location = New System.Drawing.Point(3, 137)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(159, 16)
+        Me.Label2.TabIndex = 9
+        Me.Label2.Text = "Name"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ab
         '
@@ -129,37 +160,6 @@ Partial Class dBoard
         Me.hbtn.TabIndex = 9
         Me.hbtn.Text = "Home"
         Me.hbtn.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Button1.Location = New System.Drawing.Point(0, 233)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(165, 38)
-        Me.Button1.TabIndex = 13
-        Me.Button1.Text = "Borrow"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label3
-        '
-        Me.Label3.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Label3.Location = New System.Drawing.Point(3, 162)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(159, 16)
-        Me.Label3.TabIndex = 12
-        Me.Label3.Text = "ID"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label2
-        '
-        Me.Label2.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Label2.Location = New System.Drawing.Point(3, 137)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(159, 16)
-        Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Name"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'dBoard
         '
@@ -189,7 +189,7 @@ Partial Class dBoard
     Friend WithEvents hbtn As Button
     Friend WithEvents ab As Button
     Friend WithEvents imageBox As roundPictureBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents bb As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
 End Class

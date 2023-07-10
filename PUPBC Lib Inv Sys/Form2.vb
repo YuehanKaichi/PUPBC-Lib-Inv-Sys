@@ -36,7 +36,7 @@ Public Class Form2
         Try
             Using con As New SqlConnection(constr)
                 con.Open()
-                Dim sql As String = "select username, password from admin where username = @username AND password = @password"
+                Dim sql As String = "select username, password from bookAdmin where username = @username AND password = @password"
                 cmd = New SqlCommand(sql, con)
                 cmd.Parameters.AddWithValue("username", unText.Text)
                 cmd.Parameters.AddWithValue("password", pwText.Text)
@@ -53,7 +53,7 @@ Public Class Form2
                 End If
 
                 Dim strsql As String
-                strsql = "Select id, fname, mname, sname, username, password, email from admin"
+                strsql = "Select id, fname, mname, sname, username, password, email from bookAdmin"
 
                 Dim cmd2 As New SqlCommand(strsql, con)
                 Dim myreader As SqlDataReader
@@ -61,7 +61,9 @@ Public Class Form2
 
                 myreader.Read()
                 'NOTE!!!  try to put it inside the condition to work
-                profForm.nameBox.Text = myreader("fname")
+                profForm.fnameBox.Text = myreader("fname")
+                profForm.mnamebox.Text = myreader("mname")
+                profForm.lnamebox.Text = myreader("sname")
                 profForm.emailBox.Text = myreader("email")
                 profForm.usnBox.Text = myreader("username")
                 dBoard.Label2.Text = myreader("fname")

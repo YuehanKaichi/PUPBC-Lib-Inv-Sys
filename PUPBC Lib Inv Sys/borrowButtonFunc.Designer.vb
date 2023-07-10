@@ -26,18 +26,19 @@ Partial Class borrowButtonFunc
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Round_Text_Box1 = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
-        Me.Round_Text_Box2 = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
-        Me.Round_Text_Box3 = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
-        Me.Round_Text_Box4 = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(31, 51)
+        Me.Label1.Location = New System.Drawing.Point(24, 82)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(58, 13)
         Me.Label1.TabIndex = 0
@@ -46,7 +47,7 @@ Partial Class borrowButtonFunc
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(31, 116)
+        Me.Label2.Location = New System.Drawing.Point(24, 147)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(86, 13)
         Me.Label2.TabIndex = 1
@@ -55,7 +56,7 @@ Partial Class borrowButtonFunc
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(31, 81)
+        Me.Label3.Location = New System.Drawing.Point(24, 112)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(35, 13)
         Me.Label3.TabIndex = 2
@@ -64,43 +65,15 @@ Partial Class borrowButtonFunc
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(31, 150)
+        Me.Label4.Location = New System.Drawing.Point(24, 181)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(55, 13)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Book Title"
         '
-        'Round_Text_Box1
-        '
-        Me.Round_Text_Box1.Location = New System.Drawing.Point(136, 44)
-        Me.Round_Text_Box1.Name = "Round_Text_Box1"
-        Me.Round_Text_Box1.Size = New System.Drawing.Size(173, 20)
-        Me.Round_Text_Box1.TabIndex = 4
-        '
-        'Round_Text_Box2
-        '
-        Me.Round_Text_Box2.Location = New System.Drawing.Point(136, 78)
-        Me.Round_Text_Box2.Name = "Round_Text_Box2"
-        Me.Round_Text_Box2.Size = New System.Drawing.Size(173, 20)
-        Me.Round_Text_Box2.TabIndex = 5
-        '
-        'Round_Text_Box3
-        '
-        Me.Round_Text_Box3.Location = New System.Drawing.Point(136, 113)
-        Me.Round_Text_Box3.Name = "Round_Text_Box3"
-        Me.Round_Text_Box3.Size = New System.Drawing.Size(173, 20)
-        Me.Round_Text_Box3.TabIndex = 6
-        '
-        'Round_Text_Box4
-        '
-        Me.Round_Text_Box4.Location = New System.Drawing.Point(136, 147)
-        Me.Round_Text_Box4.Name = "Round_Text_Box4"
-        Me.Round_Text_Box4.Size = New System.Drawing.Size(173, 20)
-        Me.Round_Text_Box4.TabIndex = 7
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(219, 316)
+        Me.Button1.Location = New System.Drawing.Point(198, 260)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 8
@@ -109,30 +82,68 @@ Partial Class borrowButtonFunc
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(42, 316)
+        Me.Button2.Location = New System.Drawing.Point(55, 260)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 9
         Me.Button2.Text = "Cancel"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(133, 75)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(176, 20)
+        Me.TextBox1.TabIndex = 10
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(133, 109)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(176, 20)
+        Me.TextBox2.TabIndex = 11
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(133, 144)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(176, 20)
+        Me.TextBox3.TabIndex = 12
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(133, 178)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(176, 20)
+        Me.TextBox4.TabIndex = 13
+        '
+        'Panel1
+        '
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(321, 59)
+        Me.Panel1.TabIndex = 14
+        '
         'borrowButtonFunc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(321, 372)
+        Me.ClientSize = New System.Drawing.Size(321, 299)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Round_Text_Box4)
-        Me.Controls.Add(Me.Round_Text_Box3)
-        Me.Controls.Add(Me.Round_Text_Box2)
-        Me.Controls.Add(Me.Round_Text_Box1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "borrowButtonFunc"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "borrowButtonFunc"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -143,10 +154,11 @@ Partial Class borrowButtonFunc
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Round_Text_Box1 As Round_Text_Box
-    Friend WithEvents Round_Text_Box2 As Round_Text_Box
-    Friend WithEvents Round_Text_Box3 As Round_Text_Box
-    Friend WithEvents Round_Text_Box4 As Round_Text_Box
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Panel1 As Panel
 End Class
