@@ -56,6 +56,7 @@ Public Class dBoard
         Borrow.Show()
         Borrow.Location.Offset(165, 41)
         profForm.Hide()
+        hbtnForm.Hide()
         bb.BackColor = ColorTranslator.FromOle(RGB(192, 0, 0))
         bb.ForeColor = Color.White
         ab.BackColor = Color.LightGray

@@ -14,7 +14,7 @@ Public Class deleteFunc
                     command.ExecuteNonQuery()
 
                     ' Show a success message
-                    MessageBox.Show("Book deleted successfully.")
+                    MessageBox.Show("Book deleted successfully.", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Catch ex As Exception
                     ' Show an error message
                     MessageBox.Show("Error deleting book: " & ex.Message)
@@ -28,13 +28,19 @@ Public Class deleteFunc
         End Using
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Close()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         'Prompt the user for the book ID to delete
         Dim bookId As Integer
         If Integer.TryParse(idBox.Text, bookId) Then
             ' Call the delete function with the book ID
             DeleteBook(bookId)
+            idBox.Text = ""
         Else
             MessageBox.Show("Invalid Book ID.")
+            idBox.Text = ""
         End If
     End Sub
 End Class

@@ -15,10 +15,18 @@ Public Class updateFunc
                 command.Parameters.AddWithValue("@datePublished", dpBox.Text)
                 command.Parameters.AddWithValue("@quantity", qBox.Text)
                 command.Parameters.AddWithValue("@note", nBox.Text)
+                Try
+                    conn.Open()
+                    command.ExecuteNonQuery()
+                    MessageBox.Show("Book successfully updated", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Catch ex As Exception
+                    MessageBox.Show("Error updating book: " & ex.Message)
+                Finally
+                    conn.Close()
+                End Try
 
-                conn.Open()
-                command.ExecuteNonQuery()
             End Using
         End Using
+
     End Sub
 End Class

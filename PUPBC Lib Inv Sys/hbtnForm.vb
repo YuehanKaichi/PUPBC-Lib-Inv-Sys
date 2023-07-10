@@ -21,10 +21,6 @@ Public Class hbtnForm
         conn.Close()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         conn.Open()
         Dim table As New DataTable()
@@ -46,5 +42,31 @@ Public Class hbtnForm
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         updateFunc.Show()
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        Dim searchText As String = TextBox1.Text.Trim().ToLower()
+        Try
+
+
+
+
+            For Each row As DataGridViewRow In dt1.Rows
+                If row.IsNewRow Then Continue For
+
+                Dim matchFound As Boolean = False
+
+                For Each cell As DataGridViewCell In row.Cells
+                    If cell.Value IsNot Nothing AndAlso cell.Value.ToString().ToLower().Contains(searchText) Then
+                        matchFound = True
+                        Exit For
+                    End If
+                Next
+
+                row.Visible = matchFound
+            Next
+        Catch ex As Exception
+            MessageBox.Show("Invalid input: " & ex.Message)
+        End Try
     End Sub
 End Class
