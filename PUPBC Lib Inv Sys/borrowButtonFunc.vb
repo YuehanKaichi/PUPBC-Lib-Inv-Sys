@@ -9,7 +9,7 @@ Public Class borrowButtonFunc
         Dim bookID As Integer = Integer.Parse(bID.Text)
         Dim studentID As String = sID.Text
         Dim studentName As String = sName.Text
-        Dim cnYear As String = Integer.Parse(cnYeartxt.Text)
+        Dim cnYear As String = cnYeartxt.Text
         Dim borrowDate As DateTime = DateTime.Now
         Dim dueDate As DateTime = borrowDate.AddDays(3)
 
@@ -44,7 +44,7 @@ Public Class borrowButtonFunc
         Return isAvailable
     End Function
 
-    Private Sub InsertBorrowRecord(connectionString As String, studentID As Integer, studentName As String, cnYear As Integer, bookID As Integer, borrowDate As DateTime, dueDate As DateTime)
+    Private Sub InsertBorrowRecord(connectionString As String, studentID As String, studentName As String, cnYear As String, bookID As Integer, borrowDate As DateTime, dueDate As DateTime)
         Dim query As String = "INSERT INTO pupLibBorrow (studentID, studentName, cnYear, Book_ID, BorrowDate, DueDate) VALUES (@StudentID, @StudentName, @CNYear, @BookID, @BorrowDate, @DueDate)"
 
         Using connection As New SqlConnection(connectionString)
