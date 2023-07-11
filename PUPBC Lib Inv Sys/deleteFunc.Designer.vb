@@ -42,9 +42,9 @@ Partial Class deleteFunc
         Me.Label7.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.Label7.Location = New System.Drawing.Point(52, 70)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(22, 16)
+        Me.Label7.Size = New System.Drawing.Size(58, 16)
         Me.Label7.TabIndex = 31
-        Me.Label7.Text = "ID"
+        Me.Label7.Text = "Book ID"
         '
         'Button2
         '

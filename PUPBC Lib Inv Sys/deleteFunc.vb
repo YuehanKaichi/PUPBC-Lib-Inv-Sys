@@ -7,14 +7,19 @@ Public Class deleteFunc
             Using command As New SqlCommand(delquery, connection)
                 command.Parameters.AddWithValue("@BookID", bookId)
                 Try
-                    ' Open the database connection
-                    connection.Open()
+                    ' Show a dialog message
+                    Dim mesresult As DialogResult = MessageBox.Show("Are you sure to delete this book?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+                    If mesresult = DialogResult.Yes Then
+                        ' Open the database connection
+                        connection.Open()
 
-                    ' Execute the delete command
-                    command.ExecuteNonQuery()
+                        ' Execute the delete command
+                        command.ExecuteNonQuery()
 
-                    ' Show a success message
-                    MessageBox.Show("Book deleted successfully.", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        'show success message
+                        MessageBox.Show("Book deleted successfully.", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    End If
+
                 Catch ex As Exception
                     ' Show an error message
                     MessageBox.Show("Error deleting book: " & ex.Message)
