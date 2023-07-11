@@ -71,4 +71,68 @@ Public Class Borrow
         End Try
 
     End Sub
+
+    Private Sub returnBut_Click(sender As Object, e As EventArgs) Handles returnBut.Click
+        returnButtonFunc.Show()
+    End Sub
+
+    Private Sub refreshButton_Click_1(sender As Object, e As EventArgs) Handles refreshButton.Click
+        If statusBox.Text = "Before due" Then
+            conn.Open()
+            Dim table As New DataTable()
+            Dim adapter As New SqlDataAdapter("SELECT pupLibBorrow.studentID as 'Student ID', pupLibBorrow.studentName as 'Student Name',
+                pupLibBorrow.cnYear as 'Course and Year', pupLibBorrow.Book_ID as 'Book ID', 
+                pupLibBooks.Book_title as 'Book Title', 
+                pupLibBorrow.borrowDate as 'Date Borrowed', pupLibBorrow.DueDate as 'Date to be returned' 
+                FROM pupLibBorrow
+                JOIN pupLibBooks ON pupLibBorrow.Book_ID = pupLibBooks.Book_ID
+                WHERE pupLibBorrow.DueDate > GETDATE();", conn)
+            adapter.Fill(table)
+
+            dt1.DataSource = table
+            conn.Close()
+        ElseIf statusBox.Text = "Past due" Then
+            conn.Open()
+            Dim table As New DataTable()
+            Dim adapter As New SqlDataAdapter("SELECT pupLibBorrow.studentID as 'Student ID', pupLibBorrow.studentName as 'Student Name',
+                pupLibBorrow.cnYear as 'Course and Year', pupLibBorrow.Book_ID as 'Book ID', 
+                pupLibBooks.Book_title as 'Book Title', 
+                pupLibBorrow.borrowDate as 'Date Borrowed', pupLibBorrow.DueDate as 'Date to be returned' 
+                FROM pupLibBorrow
+                JOIN pupLibBooks ON pupLibBorrow.Book_ID = pupLibBooks.Book_ID
+                WHERE pupLibBorrow.DueDate < GETDATE();", conn)
+            adapter.Fill(table)
+
+            dt1.DataSource = table
+            conn.Close()
+        Else
+            conn.Open()
+            Dim table As New DataTable()
+            Dim adapter As New SqlDataAdapter("SELECT pupLibBorrow.studentID as 'Student ID', pupLibBorrow.studentName as 'Student Name',
+        pupLibBorrow.cnYear as 'Course and Year', pupLibBorrow.Book_ID as 'Book ID', 
+        pupLibBooks.Book_title as 'Book Title', 
+        pupLibBorrow.borrowDate as 'Date Borrowed', pupLibBorrow.DueDate as 'Date to be returned' 
+        FROM pupLibBorrow
+        JOIN pupLibBooks ON pupLibBorrow.Book_ID = pupLibBooks.Book_ID;", conn)
+            adapter.Fill(table)
+
+            dt1.DataSource = table
+            conn.Close()
+        End If
+    End Sub
+
+    Private Sub Borrow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        conn.Open()
+        Dim table As New DataTable()
+        Dim adapter As New SqlDataAdapter("SELECT pupLibBorrow.studentID as 'Student ID', pupLibBorrow.studentName as 'Student Name',
+        pupLibBorrow.cnYear as 'Course and Year', pupLibBorrow.Book_ID as 'Book ID', 
+        pupLibBooks.Book_title as 'Book Title', 
+        pupLibBorrow.borrowDate as 'Date Borrowed', pupLibBorrow.DueDate as 'Date to be returned' 
+        FROM pupLibBorrow
+        JOIN pupLibBooks ON pupLibBorrow.Book_ID = pupLibBooks.Book_ID;", conn)
+        adapter.Fill(table)
+
+        dt1.DataSource = table
+        conn.Close()
+    End Sub
 End Class
