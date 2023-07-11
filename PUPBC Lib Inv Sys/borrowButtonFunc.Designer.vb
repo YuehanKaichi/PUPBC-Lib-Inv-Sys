@@ -28,10 +28,10 @@ Partial Class borrowButtonFunc
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.sID = New System.Windows.Forms.TextBox()
+        Me.sName = New System.Windows.Forms.TextBox()
+        Me.cnYeartxt = New System.Windows.Forms.TextBox()
+        Me.bID = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
@@ -67,9 +67,9 @@ Partial Class borrowButtonFunc
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(24, 181)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(55, 13)
+        Me.Label4.Size = New System.Drawing.Size(46, 13)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Book Title"
+        Me.Label4.Text = "Book ID"
         '
         'Button1
         '
@@ -89,33 +89,33 @@ Partial Class borrowButtonFunc
         Me.Button2.Text = "Cancel"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'sID
         '
-        Me.TextBox1.Location = New System.Drawing.Point(133, 75)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(176, 20)
-        Me.TextBox1.TabIndex = 10
+        Me.sID.Location = New System.Drawing.Point(133, 75)
+        Me.sID.Name = "sID"
+        Me.sID.Size = New System.Drawing.Size(176, 20)
+        Me.sID.TabIndex = 10
         '
-        'TextBox2
+        'sName
         '
-        Me.TextBox2.Location = New System.Drawing.Point(133, 109)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(176, 20)
-        Me.TextBox2.TabIndex = 11
+        Me.sName.Location = New System.Drawing.Point(133, 109)
+        Me.sName.Name = "sName"
+        Me.sName.Size = New System.Drawing.Size(176, 20)
+        Me.sName.TabIndex = 11
         '
-        'TextBox3
+        'cnYeartxt
         '
-        Me.TextBox3.Location = New System.Drawing.Point(133, 144)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(176, 20)
-        Me.TextBox3.TabIndex = 12
+        Me.cnYeartxt.Location = New System.Drawing.Point(133, 144)
+        Me.cnYeartxt.Name = "cnYeartxt"
+        Me.cnYeartxt.Size = New System.Drawing.Size(176, 20)
+        Me.cnYeartxt.TabIndex = 12
         '
-        'TextBox4
+        'bID
         '
-        Me.TextBox4.Location = New System.Drawing.Point(133, 178)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(176, 20)
-        Me.TextBox4.TabIndex = 13
+        Me.bID.Location = New System.Drawing.Point(133, 178)
+        Me.bID.Name = "bID"
+        Me.bID.Size = New System.Drawing.Size(176, 20)
+        Me.bID.TabIndex = 13
         '
         'Panel1
         '
@@ -131,10 +131,10 @@ Partial Class borrowButtonFunc
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(321, 299)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.bID)
+        Me.Controls.Add(Me.cnYeartxt)
+        Me.Controls.Add(Me.sName)
+        Me.Controls.Add(Me.sID)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label4)
@@ -156,9 +156,9 @@ Partial Class borrowButtonFunc
     Friend WithEvents Label4 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents sID As TextBox
+    Friend WithEvents sName As TextBox
+    Friend WithEvents cnYeartxt As TextBox
+    Friend WithEvents bID As TextBox
     Friend WithEvents Panel1 As Panel
 End Class
