@@ -189,6 +189,12 @@
     <Compile Include="profForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="returnButtonFunc.Designer.vb">
+      <DependentUpon>returnButtonFunc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="returnButtonFunc.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Round Text Box.vb">
       <SubType>Component</SubType>
     </Compile>
@@ -238,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="profForm.resx">
       <DependentUpon>profForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="returnButtonFunc.resx">
+      <DependentUpon>returnButtonFunc.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Update.resx">
       <DependentUpon>Update.vb</DependentUpon>
