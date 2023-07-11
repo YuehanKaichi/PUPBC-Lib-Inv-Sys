@@ -19,6 +19,12 @@ Public Class updateFunc
                     conn.Open()
                     command.ExecuteNonQuery()
                     MessageBox.Show("Book successfully updated", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    idBox.Text = ""
+                    tBox.Text = ""
+                    aBox.Text = ""
+                    dpBox.Text = ""
+                    qBox.Text = ""
+                    nBox.Text = ""
                 Catch ex As Exception
                     MessageBox.Show("Error updating book: " & ex.Message)
                 Finally
