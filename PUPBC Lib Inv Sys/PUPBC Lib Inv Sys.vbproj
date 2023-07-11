@@ -119,28 +119,10 @@
     <Compile Include="addForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="borrowButtonFunc.Designer.vb">
-      <DependentUpon>borrowButtonFunc.vb</DependentUpon>
-    </Compile>
-    <Compile Include="borrowButtonFunc.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="cpassForm.Designer.vb">
-      <DependentUpon>cpassForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="cpassForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="dBoard.Designer.vb">
       <DependentUpon>dBoard.vb</DependentUpon>
     </Compile>
     <Compile Include="dBoard.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="deleteFunc.Designer.vb">
-      <DependentUpon>deleteFunc.vb</DependentUpon>
-    </Compile>
-    <Compile Include="deleteFunc.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.vb">
@@ -154,18 +136,6 @@
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
     <Compile Include="Form2.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="borrowFunc.Designer.vb">
-      <DependentUpon>borrowFunc.vb</DependentUpon>
-    </Compile>
-    <Compile Include="borrowFunc.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="hbtnForm.Designer.vb">
-      <DependentUpon>hbtnForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="hbtnForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -183,40 +153,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="profForm.Designer.vb">
-      <DependentUpon>profForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="profForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Round Text Box.vb">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="roundPictureBox.vb">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Update.Designer.vb">
-      <DependentUpon>Update.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Update.vb">
-      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="addForm.resx">
       <DependentUpon>addForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="borrowButtonFunc.resx">
-      <DependentUpon>borrowButtonFunc.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="cpassForm.resx">
-      <DependentUpon>cpassForm.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="dBoard.resx">
       <DependentUpon>dBoard.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="deleteFunc.resx">
-      <DependentUpon>deleteFunc.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -224,23 +170,11 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="borrowFunc.resx">
-      <DependentUpon>borrowFunc.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="hbtnForm.resx">
-      <DependentUpon>hbtnForm.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="profForm.resx">
-      <DependentUpon>profForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Update.resx">
-      <DependentUpon>Update.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

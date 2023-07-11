@@ -28,7 +28,6 @@ Partial Class Form2
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.pwText = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
         Me.unText = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
         Me.logPanel.SuspendLayout()
@@ -37,7 +36,6 @@ Partial Class Form2
         'logPanel
         '
         Me.logPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.logPanel.Controls.Add(Me.Button1)
         Me.logPanel.Controls.Add(Me.rmBox)
         Me.logPanel.Controls.Add(Me.btnRound)
         Me.logPanel.Controls.Add(Me.Label3)
@@ -110,16 +108,6 @@ Partial Class Form2
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Login"
         '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Button1.Location = New System.Drawing.Point(40, 359)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(209, 28)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Exit"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'pwText
         '
         Me.pwText.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
@@ -161,5 +149,4 @@ Partial Class Form2
     Friend WithEvents pwText As Round_Text_Box
     Friend WithEvents btnRound As Button
     Friend WithEvents rmBox As CheckBox
-    Friend WithEvents Button1 As Button
 End Class

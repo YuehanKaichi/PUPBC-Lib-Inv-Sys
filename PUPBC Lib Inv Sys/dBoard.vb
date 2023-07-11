@@ -1,53 +1,33 @@
 ﻿Imports System.Data.SqlClient
 Public Class dBoard
     Dim bclick As Integer
-    Dim cclick
-    Dim conn As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=libinvsystem;Integrated Security=True")
+
+    Private Sub home_Click(sender As Object, e As EventArgs) Handles home.Click
+        hpanel.Location = New Point(68, 56)
+        If (bclick = 0) Then
+            home.BackColor = ColorTranslator.FromOle(RGB(192, 0, 0))
+        End If
 
 
+    End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Me.Close()
         Form2.Show()
-        If (Form2.rmBox.Checked) Then
-
-        Else
-            Form2.unText.Text = ""
-            Form2.pwText.Text = ""
-        End If
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs)
-
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        addForm.Show()
     End Sub
 
-    'HOME
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles hbtn.Click
-        hbtnForm.MdiParent = Me
-        hbtnForm.Show()
-        hbtnForm.Location.Offset(165, 41)
-        profForm.Hide()
-        hbtn.BackColor = ColorTranslator.FromOle(RGB(192, 0, 0))
-        hbtn.ForeColor = Color.White
-        ab.BackColor = Color.LightGray
-        ab.ForeColor = Color.Black
-
-    End Sub
-
-    'PROFILE
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles ab.Click
-        profForm.MdiParent = Me
-        profForm.Show()
-        profForm.Location.Offset(165, 41)
-        hbtnForm.Hide()
-        ab.BackColor = ColorTranslator.FromOle(RGB(192, 0, 0))
-        ab.ForeColor = Color.White
-        hbtn.BackColor = Color.LightGray
-        hbtn.ForeColor = Color.Black
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
+    '  Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+    ' Dim constr As String = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=libinvsystem;Integrated Security=True"
+    'Dim con As SqlConnection
+    'Dim dr As SqlDataReader
+    'Dim showBook As SqlCommand
+    'Dim i As Integer
+    '
+    'con.Open()
+    'String query 
+    ' End Sub
 End Class

@@ -24,49 +24,94 @@ Partial Class dBoard
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dBoard))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.imageBox = New PUPBC_Lib_Inv_Sys.roundPictureBox()
-        Me.ab = New System.Windows.Forms.Button()
-        Me.hbtn = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.home = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.hpanel = New System.Windows.Forms.Panel()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.bName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.bAuthor = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.bPub = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.bQuan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.bNote = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        CType(Me.imageBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.hpanel.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Firebrick
-        Me.Panel1.Controls.Add(Me.Panel6)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.BackColor = System.Drawing.Color.LightGray
+        Me.Panel1.Controls.Add(Me.Button5)
+        Me.Panel1.Controls.Add(Me.Button3)
+        Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.home)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1073, 41)
+        Me.Panel1.Size = New System.Drawing.Size(147, 589)
         Me.Panel1.TabIndex = 0
         '
-        'Panel6
+        'Button5
         '
-        Me.Panel6.Location = New System.Drawing.Point(168, 41)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(200, 100)
-        Me.Panel6.TabIndex = 9
+        Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.Location = New System.Drawing.Point(4, 66)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(54, 48)
+        Me.Button5.TabIndex = 5
+        Me.Button5.Text = "Home"
+        Me.Button5.UseVisualStyleBackColor = True
         '
-        'Label1
+        'Button3
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("MS Reference Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(370, 4)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(387, 34)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Library Inventory System"
+        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.Location = New System.Drawing.Point(4, 120)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(54, 48)
+        Me.Button3.TabIndex = 4
+        Me.Button3.Text = "Home"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.Location = New System.Drawing.Point(4, 174)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(54, 48)
+        Me.Button2.TabIndex = 3
+        Me.Button2.Text = "Home"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.Location = New System.Drawing.Point(4, 499)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(54, 48)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Home"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'home
+        '
+        Me.home.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.home.FlatAppearance.BorderSize = 0
+        Me.home.Location = New System.Drawing.Point(4, 12)
+        Me.home.Name = "home"
+        Me.home.Size = New System.Drawing.Size(54, 48)
+        Me.home.TabIndex = 1
+        Me.home.Text = "Home"
+        Me.home.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -74,7 +119,7 @@ Partial Class dBoard
         Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(43, 498)
+        Me.Button4.Location = New System.Drawing.Point(902, 12)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(80, 38)
         Me.Button4.TabIndex = 5
@@ -82,114 +127,108 @@ Partial Class dBoard
         Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'Panel2
+        'hpanel
         '
-        Me.Panel2.BackColor = System.Drawing.Color.LightGray
-        Me.Panel2.Controls.Add(Me.Button1)
-        Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Controls.Add(Me.imageBox)
-        Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Controls.Add(Me.ab)
-        Me.Panel2.Controls.Add(Me.hbtn)
-        Me.Panel2.Controls.Add(Me.Button4)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel2.Location = New System.Drawing.Point(0, 41)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(165, 548)
-        Me.Panel2.TabIndex = 7
+        Me.hpanel.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.hpanel.Controls.Add(Me.Button7)
+        Me.hpanel.Controls.Add(Me.DataGridView1)
+        Me.hpanel.Controls.Add(Me.Button6)
+        Me.hpanel.Location = New System.Drawing.Point(153, 98)
+        Me.hpanel.Name = "hpanel"
+        Me.hpanel.Size = New System.Drawing.Size(921, 491)
+        Me.hpanel.TabIndex = 6
         '
-        'imageBox
+        'Button6
         '
-        Me.imageBox.Image = CType(resources.GetObject("imageBox.Image"), System.Drawing.Image)
-        Me.imageBox.Location = New System.Drawing.Point(19, 20)
-        Me.imageBox.Name = "imageBox"
-        Me.imageBox.Size = New System.Drawing.Size(125, 114)
-        Me.imageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.imageBox.TabIndex = 11
-        Me.imageBox.TabStop = False
+        Me.Button6.BackColor = System.Drawing.Color.LightGreen
+        Me.Button6.Location = New System.Drawing.Point(838, 14)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 34)
+        Me.Button6.TabIndex = 0
+        Me.Button6.Text = "Add Book"
+        Me.Button6.UseVisualStyleBackColor = False
         '
-        'ab
+        'DataGridView1
         '
-        Me.ab.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ab.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.ab.Location = New System.Drawing.Point(0, 270)
-        Me.ab.Name = "ab"
-        Me.ab.Size = New System.Drawing.Size(165, 38)
-        Me.ab.TabIndex = 10
-        Me.ab.Text = "Profile"
-        Me.ab.UseVisualStyleBackColor = True
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.bName, Me.bAuthor, Me.bPub, Me.bQuan, Me.bNote})
+        Me.DataGridView1.Location = New System.Drawing.Point(3, 77)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(915, 411)
+        Me.DataGridView1.TabIndex = 0
         '
-        'hbtn
+        'bName
         '
-        Me.hbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.hbtn.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.hbtn.Location = New System.Drawing.Point(0, 196)
-        Me.hbtn.Name = "hbtn"
-        Me.hbtn.Size = New System.Drawing.Size(165, 38)
-        Me.hbtn.TabIndex = 9
-        Me.hbtn.Text = "Home"
-        Me.hbtn.UseVisualStyleBackColor = True
+        Me.bName.HeaderText = "Book Title"
+        Me.bName.Name = "bName"
+        Me.bName.ReadOnly = True
         '
-        'Button1
+        'bAuthor
         '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Button1.Location = New System.Drawing.Point(0, 233)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(165, 38)
-        Me.Button1.TabIndex = 13
-        Me.Button1.Text = "Borrow"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.bAuthor.HeaderText = "Author"
+        Me.bAuthor.Name = "bAuthor"
+        Me.bAuthor.ReadOnly = True
         '
-        'Label3
+        'bPub
         '
-        Me.Label3.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Label3.Location = New System.Drawing.Point(3, 162)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(159, 16)
-        Me.Label3.TabIndex = 12
-        Me.Label3.Text = "ID"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.bPub.HeaderText = "Published Date"
+        Me.bPub.Name = "bPub"
+        Me.bPub.ReadOnly = True
         '
-        'Label2
+        'bQuan
         '
-        Me.Label2.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Label2.Location = New System.Drawing.Point(3, 137)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(159, 16)
-        Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Name"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.bQuan.HeaderText = "Quantity"
+        Me.bQuan.Name = "bQuan"
+        Me.bQuan.ReadOnly = True
+        '
+        'bNote
+        '
+        Me.bNote.HeaderText = "Note"
+        Me.bNote.Name = "bNote"
+        Me.bNote.ReadOnly = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(723, 20)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(75, 23)
+        Me.Button7.TabIndex = 1
+        Me.Button7.Text = "Button7"
+        Me.Button7.UseVisualStyleBackColor = True
         '
         'dBoard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1073, 589)
-        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.hpanel)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.IsMdiContainer = True
         Me.Name = "dBoard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "dBoard"
         Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        CType(Me.imageBox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.hpanel.ResumeLayout(False)
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents home As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents hbtn As Button
-    Friend WithEvents ab As Button
-    Friend WithEvents imageBox As roundPictureBox
+    Friend WithEvents hpanel As Panel
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents Button7 As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents bName As DataGridViewTextBoxColumn
+    Friend WithEvents bAuthor As DataGridViewTextBoxColumn
+    Friend WithEvents bPub As DataGridViewTextBoxColumn
+    Friend WithEvents bQuan As DataGridViewTextBoxColumn
+    Friend WithEvents bNote As DataGridViewTextBoxColumn
 End Class
