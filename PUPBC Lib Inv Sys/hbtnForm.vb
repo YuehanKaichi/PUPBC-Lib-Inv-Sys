@@ -24,7 +24,7 @@ Public Class hbtnForm
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         conn.Open()
         Dim table As New DataTable()
-        Dim adapter As New SqlDataAdapter("SELECT book_id as 'Book ID', Book_title as 'Book Title', Book_author as 'Author', Date_published as 'Date Published', quantity as 'Quantity', note as 'note' FROM pupLibBooks", conn)
+        Dim adapter As New SqlDataAdapter("SELECT book_id as 'Book ID', Book_title as 'Book Title', Book_author as 'Author', Date_published as 'Date Published', quantity as 'Quantity', note as 'note', avail as 'Availability' FROM pupLibBooks", conn)
         adapter.Fill(table)
 
         dt1.DataSource = table
