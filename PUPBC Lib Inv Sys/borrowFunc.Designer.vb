@@ -22,6 +22,8 @@ Partial Class Borrow
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Borrow))
         Me.dt1 = New System.Windows.Forms.DataGridView()
         Me.borBut = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -29,6 +31,9 @@ Partial Class Borrow
         Me.returnBut = New System.Windows.Forms.Button()
         Me.statusBox = New System.Windows.Forms.ComboBox()
         Me.refreshButton = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.dt1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -89,7 +94,7 @@ Partial Class Borrow
         Me.statusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.statusBox.FormattingEnabled = True
         Me.statusBox.Items.AddRange(New Object() {"Before due", "Past due", "All"})
-        Me.statusBox.Location = New System.Drawing.Point(106, 74)
+        Me.statusBox.Location = New System.Drawing.Point(82, 78)
         Me.statusBox.Name = "statusBox"
         Me.statusBox.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.statusBox.Size = New System.Drawing.Size(100, 21)
@@ -104,11 +109,31 @@ Partial Class Borrow
         Me.refreshButton.Text = "Refresh"
         Me.refreshButton.UseVisualStyleBackColor = True
         '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 15000
+        '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
+        Me.NotifyIcon1.Visible = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(35, 81)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(37, 13)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "Status"
+        '
         'Borrow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(904, 544)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.refreshButton)
         Me.Controls.Add(Me.statusBox)
         Me.Controls.Add(Me.returnBut)
@@ -119,7 +144,7 @@ Partial Class Borrow
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Borrow"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form3"
+        Me.Text = "0"
         CType(Me.dt1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -133,4 +158,7 @@ Partial Class Borrow
     Friend WithEvents returnBut As Button
     Friend WithEvents statusBox As ComboBox
     Friend WithEvents refreshButton As Button
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents NotifyIcon1 As NotifyIcon
+    Friend WithEvents Label2 As Label
 End Class
