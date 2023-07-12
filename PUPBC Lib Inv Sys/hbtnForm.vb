@@ -69,4 +69,36 @@ Public Class hbtnForm
             MessageBox.Show("Invalid input: " & ex.Message)
         End Try
     End Sub
+
+    Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            e.SuppressKeyPress = True ' Suppress the "ding" sound when Enter is pressed.
+            PerformSearch(TextBox1.Text)
+        End If
+    End Sub
+    Private Sub PerformSearch(searchTerm As String)
+        ' Clear any previous filters
+        dt1.ClearSelection()
+        dt1.CurrentCell = Nothing
+
+        If String.IsNullOrWhiteSpace(searchTerm) Then
+            ' If the search term is empty, show all data
+            For Each row As DataGridViewRow In dt1.Rows
+                row.Visible = True
+            Next
+        Else
+            ' Perform the search and hide rows that do not match the search term
+            For Each row As DataGridViewRow In dt1.Rows
+                Dim matchFound As Boolean = False
+                For Each cell As DataGridViewCell In row.Cells
+                    If cell.Value IsNot Nothing AndAlso cell.Value.ToString().IndexOf(searchTerm, StringComparison.OrdinalIgnoreCase) >= 0 Then
+                        matchFound = True
+                        Exit For
+                    End If
+                Next
+
+                row.Visible = matchFound
+            Next
+        End If
+    End Sub
 End Class
