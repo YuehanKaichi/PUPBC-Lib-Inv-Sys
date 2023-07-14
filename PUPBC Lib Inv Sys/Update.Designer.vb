@@ -166,11 +166,11 @@ Partial Class updateFunc
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(103, 9)
+        Me.Label1.Location = New System.Drawing.Point(103, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(130, 20)
+        Me.Label1.Size = New System.Drawing.Size(135, 20)
         Me.Label1.TabIndex = 33
-        Me.Label1.Text = "Delete Books"
+        Me.Label1.Text = "Update Books"
         '
         'updateFunc
         '

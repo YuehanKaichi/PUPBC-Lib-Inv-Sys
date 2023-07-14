@@ -6,7 +6,7 @@ Public Class borrowButtonFunc
         Me.Close()
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim studentID As String = Convert.ToInt32(sID.Text)
+        Dim studentID As String = sID.Text
         Dim studentName As String = sName.Text
         Dim courseAndYear As String = cnYeartxt.Text
         Dim bookID As String = bID.Text
