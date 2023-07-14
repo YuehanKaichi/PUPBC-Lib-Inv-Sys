@@ -59,6 +59,7 @@ Partial Class cpassForm
         Me.newPbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.newPbox.Location = New System.Drawing.Point(29, 88)
         Me.newPbox.Name = "newPbox"
+        Me.newPbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.newPbox.Size = New System.Drawing.Size(182, 22)
         Me.newPbox.TabIndex = 3
         '
@@ -67,6 +68,7 @@ Partial Class cpassForm
         Me.conPbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.conPbox.Location = New System.Drawing.Point(29, 136)
         Me.conPbox.Name = "conPbox"
+        Me.conPbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.conPbox.Size = New System.Drawing.Size(182, 22)
         Me.conPbox.TabIndex = 4
         '
