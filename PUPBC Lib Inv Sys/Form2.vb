@@ -12,24 +12,19 @@ Public Class Form2
         btn.BackColor = Color.Yellow
 
 
-        Dim rad As New Drawing2D.GraphicsPath
-        rad.StartFigure()
-        rad.AddArc(New Rectangle(0, 0, 20, 20), 180, 90)
-        rad.AddLine(10, 0, btn.Width - 20, 0)
-        rad.AddArc(New Rectangle(btn.Width - 20, 0, 20, 20), -90, 90)
-        rad.AddLine(btnRound.Width, 20, btn.Width, btn.Height - 10)
-        rad.AddArc(New Rectangle(btn.Width - 25, btn.Height - 25, 25, 25), 0, 90)
-        rad.AddLine(btn.Width - 10, btn.Width, 20, btn.Height)
-        rad.AddArc(New Rectangle(0, btn.Height - 20, 20, 20), 90, 90)
-        btnRound.Region = New Region(rad)
+    End Sub
+    Private Sub RoundCornerButton2(btnn As Button)
+
+        btnn.FlatAppearance.BorderSize = 0
+        btnn.FlatStyle = FlatStyle.Flat
+        btnn.BackColor = Color.Yellow
+
+
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         RoundCornerButton(btnRound)
-    End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles logPanel.Paint
-
+        RoundCornerButton(extbtn)
     End Sub
 
     Private Sub btnRound_Click(sender As Object, e As EventArgs) Handles btnRound.Click
@@ -77,7 +72,7 @@ Public Class Form2
         End Try
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles extbtn.Click
         Form1.Close()
     End Sub
 End Class

@@ -23,21 +23,21 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.logPanel = New System.Windows.Forms.Panel()
+        Me.extbtn = New System.Windows.Forms.Button()
         Me.rmBox = New System.Windows.Forms.CheckBox()
         Me.btnRound = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.pwText = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
         Me.unText = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.logPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'logPanel
         '
         Me.logPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.logPanel.Controls.Add(Me.Button1)
+        Me.logPanel.Controls.Add(Me.extbtn)
         Me.logPanel.Controls.Add(Me.rmBox)
         Me.logPanel.Controls.Add(Me.btnRound)
         Me.logPanel.Controls.Add(Me.Label3)
@@ -46,17 +46,27 @@ Partial Class Form2
         Me.logPanel.Controls.Add(Me.unText)
         Me.logPanel.Controls.Add(Me.Label1)
         Me.logPanel.Dock = System.Windows.Forms.DockStyle.Right
-        Me.logPanel.Location = New System.Drawing.Point(483, 0)
+        Me.logPanel.Location = New System.Drawing.Point(504, 0)
         Me.logPanel.Name = "logPanel"
-        Me.logPanel.Size = New System.Drawing.Size(366, 491)
+        Me.logPanel.Size = New System.Drawing.Size(345, 491)
         Me.logPanel.TabIndex = 0
+        '
+        'extbtn
+        '
+        Me.extbtn.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
+        Me.extbtn.Location = New System.Drawing.Point(69, 359)
+        Me.extbtn.Name = "extbtn"
+        Me.extbtn.Size = New System.Drawing.Size(209, 28)
+        Me.extbtn.TabIndex = 7
+        Me.extbtn.Text = "Exit"
+        Me.extbtn.UseVisualStyleBackColor = True
         '
         'rmBox
         '
         Me.rmBox.AutoSize = True
         Me.rmBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.rmBox.ForeColor = System.Drawing.Color.White
-        Me.rmBox.Location = New System.Drawing.Point(40, 302)
+        Me.rmBox.Location = New System.Drawing.Point(69, 302)
         Me.rmBox.Name = "rmBox"
         Me.rmBox.Size = New System.Drawing.Size(118, 20)
         Me.rmBox.TabIndex = 6
@@ -67,7 +77,7 @@ Partial Class Form2
         '
         Me.btnRound.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.btnRound.ForeColor = System.Drawing.Color.Black
-        Me.btnRound.Location = New System.Drawing.Point(40, 322)
+        Me.btnRound.Location = New System.Drawing.Point(69, 322)
         Me.btnRound.Name = "btnRound"
         Me.btnRound.Size = New System.Drawing.Size(209, 26)
         Me.btnRound.TabIndex = 5
@@ -80,7 +90,7 @@ Partial Class Form2
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(37, 254)
+        Me.Label3.Location = New System.Drawing.Point(66, 254)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(70, 16)
         Me.Label3.TabIndex = 4
@@ -92,38 +102,16 @@ Partial Class Form2
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(37, 173)
+        Me.Label2.Location = New System.Drawing.Point(66, 173)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(72, 16)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Username"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("MS Reference Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(27, 111)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(113, 44)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Login"
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Button1.Location = New System.Drawing.Point(40, 359)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(209, 28)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Exit"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'pwText
         '
         Me.pwText.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.pwText.Location = New System.Drawing.Point(40, 273)
+        Me.pwText.Location = New System.Drawing.Point(69, 273)
         Me.pwText.Name = "pwText"
         Me.pwText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.pwText.Size = New System.Drawing.Size(209, 23)
@@ -132,10 +120,22 @@ Partial Class Form2
         'unText
         '
         Me.unText.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.unText.Location = New System.Drawing.Point(40, 192)
+        Me.unText.Location = New System.Drawing.Point(69, 192)
         Me.unText.Name = "unText"
         Me.unText.Size = New System.Drawing.Size(209, 23)
         Me.unText.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("MS Reference Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(56, 111)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(113, 44)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Login"
         '
         'Form2
         '
@@ -161,5 +161,5 @@ Partial Class Form2
     Friend WithEvents pwText As Round_Text_Box
     Friend WithEvents btnRound As Button
     Friend WithEvents rmBox As CheckBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents extbtn As Button
 End Class
