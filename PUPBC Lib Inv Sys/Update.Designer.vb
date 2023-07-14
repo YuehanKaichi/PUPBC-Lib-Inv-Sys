@@ -41,9 +41,10 @@ Partial Class updateFunc
         '
         'idBox
         '
+        Me.idBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.idBox.Location = New System.Drawing.Point(56, 80)
         Me.idBox.Name = "idBox"
-        Me.idBox.Size = New System.Drawing.Size(221, 20)
+        Me.idBox.Size = New System.Drawing.Size(221, 23)
         Me.idBox.TabIndex = 47
         '
         'Label7
@@ -58,10 +59,11 @@ Partial Class updateFunc
         '
         'dpBox
         '
+        Me.dpBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.dpBox.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dpBox.Location = New System.Drawing.Point(56, 208)
         Me.dpBox.Name = "dpBox"
-        Me.dpBox.Size = New System.Drawing.Size(221, 20)
+        Me.dpBox.Size = New System.Drawing.Size(221, 23)
         Me.dpBox.TabIndex = 45
         '
         'Label6
@@ -136,41 +138,47 @@ Partial Class updateFunc
         '
         'nBox
         '
+        Me.nBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.nBox.Location = New System.Drawing.Point(56, 290)
         Me.nBox.Name = "nBox"
-        Me.nBox.Size = New System.Drawing.Size(221, 20)
+        Me.nBox.Size = New System.Drawing.Size(221, 23)
         Me.nBox.TabIndex = 37
         '
         'qBox
         '
+        Me.qBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.qBox.Location = New System.Drawing.Point(56, 249)
         Me.qBox.Name = "qBox"
-        Me.qBox.Size = New System.Drawing.Size(221, 20)
+        Me.qBox.Size = New System.Drawing.Size(221, 23)
         Me.qBox.TabIndex = 36
         '
         'aBox
         '
+        Me.aBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.aBox.Location = New System.Drawing.Point(56, 164)
         Me.aBox.Name = "aBox"
-        Me.aBox.Size = New System.Drawing.Size(221, 20)
+        Me.aBox.Size = New System.Drawing.Size(221, 23)
         Me.aBox.TabIndex = 35
         '
         'tBox
         '
+        Me.tBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.tBox.Location = New System.Drawing.Point(56, 122)
         Me.tBox.Name = "tBox"
-        Me.tBox.Size = New System.Drawing.Size(221, 20)
+        Me.tBox.Size = New System.Drawing.Size(221, 23)
         Me.tBox.TabIndex = 34
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Firebrick
         Me.Label1.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(103, 18)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(-1, -1)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(135, 20)
+        Me.Label1.Size = New System.Drawing.Size(332, 47)
         Me.Label1.TabIndex = 33
         Me.Label1.Text = "Update Books"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'updateFunc
         '

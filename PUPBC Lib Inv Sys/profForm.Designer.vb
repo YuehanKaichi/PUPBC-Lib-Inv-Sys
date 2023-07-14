@@ -51,63 +51,63 @@ Partial Class profForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.Label2.Location = New System.Drawing.Point(102, 256)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(45, 16)
+        Me.Label2.Size = New System.Drawing.Size(44, 16)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Name"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.Label3.Location = New System.Drawing.Point(102, 332)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(42, 16)
+        Me.Label3.Size = New System.Drawing.Size(41, 16)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Email"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.Label4.Location = New System.Drawing.Point(535, 256)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(71, 16)
+        Me.Label4.Size = New System.Drawing.Size(72, 16)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Username"
         '
         'fnameBox
         '
         Me.fnameBox.Enabled = False
-        Me.fnameBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.fnameBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.fnameBox.Location = New System.Drawing.Point(105, 291)
         Me.fnameBox.Name = "fnameBox"
-        Me.fnameBox.Size = New System.Drawing.Size(122, 22)
+        Me.fnameBox.Size = New System.Drawing.Size(122, 23)
         Me.fnameBox.TabIndex = 5
         '
         'usnBox
         '
         Me.usnBox.Enabled = False
-        Me.usnBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.usnBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.usnBox.Location = New System.Drawing.Point(538, 291)
         Me.usnBox.Name = "usnBox"
-        Me.usnBox.Size = New System.Drawing.Size(257, 22)
+        Me.usnBox.Size = New System.Drawing.Size(257, 23)
         Me.usnBox.TabIndex = 6
         '
         'emailBox
         '
         Me.emailBox.Enabled = False
-        Me.emailBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.emailBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.emailBox.Location = New System.Drawing.Point(105, 362)
         Me.emailBox.Name = "emailBox"
-        Me.emailBox.Size = New System.Drawing.Size(263, 22)
+        Me.emailBox.Size = New System.Drawing.Size(263, 23)
         Me.emailBox.TabIndex = 7
         '
         'edtbtn
         '
-        Me.edtbtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.edtbtn.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.edtbtn.Location = New System.Drawing.Point(708, 481)
         Me.edtbtn.Name = "edtbtn"
         Me.edtbtn.Size = New System.Drawing.Size(87, 28)
@@ -117,7 +117,7 @@ Partial Class profForm
         '
         'cpwbtn
         '
-        Me.cpwbtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.cpwbtn.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.cpwbtn.Location = New System.Drawing.Point(105, 481)
         Me.cpwbtn.Name = "cpwbtn"
         Me.cpwbtn.Size = New System.Drawing.Size(140, 28)
@@ -139,19 +139,19 @@ Partial Class profForm
         'mnamebox
         '
         Me.mnamebox.Enabled = False
-        Me.mnamebox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.mnamebox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.mnamebox.Location = New System.Drawing.Point(233, 291)
         Me.mnamebox.Name = "mnamebox"
-        Me.mnamebox.Size = New System.Drawing.Size(81, 22)
+        Me.mnamebox.Size = New System.Drawing.Size(81, 23)
         Me.mnamebox.TabIndex = 10
         '
         'lnamebox
         '
         Me.lnamebox.Enabled = False
-        Me.lnamebox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
+        Me.lnamebox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.lnamebox.Location = New System.Drawing.Point(320, 291)
         Me.lnamebox.Name = "lnamebox"
-        Me.lnamebox.Size = New System.Drawing.Size(139, 22)
+        Me.lnamebox.Size = New System.Drawing.Size(139, 23)
         Me.lnamebox.TabIndex = 11
         '
         'profForm

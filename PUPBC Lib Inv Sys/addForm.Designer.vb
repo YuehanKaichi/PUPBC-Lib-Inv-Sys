@@ -42,40 +42,46 @@ Partial Class addForm
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Firebrick
         Me.Label1.Font = New System.Drawing.Font("MS Reference Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(83, 9)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(104, 20)
+        Me.Label1.Size = New System.Drawing.Size(284, 48)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Add Books"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'tBox
         '
+        Me.tBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.tBox.Location = New System.Drawing.Point(36, 120)
         Me.tBox.Name = "tBox"
-        Me.tBox.Size = New System.Drawing.Size(221, 20)
+        Me.tBox.Size = New System.Drawing.Size(221, 23)
         Me.tBox.TabIndex = 1
         '
         'aBox
         '
+        Me.aBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.aBox.Location = New System.Drawing.Point(36, 162)
         Me.aBox.Name = "aBox"
-        Me.aBox.Size = New System.Drawing.Size(221, 20)
+        Me.aBox.Size = New System.Drawing.Size(221, 23)
         Me.aBox.TabIndex = 2
         '
         'qBox
         '
+        Me.qBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.qBox.Location = New System.Drawing.Point(36, 247)
         Me.qBox.Name = "qBox"
-        Me.qBox.Size = New System.Drawing.Size(221, 20)
+        Me.qBox.Size = New System.Drawing.Size(221, 23)
         Me.qBox.TabIndex = 4
         '
         'nBox
         '
+        Me.nBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.nBox.Location = New System.Drawing.Point(36, 288)
         Me.nBox.Name = "nBox"
-        Me.nBox.Size = New System.Drawing.Size(221, 20)
+        Me.nBox.Size = New System.Drawing.Size(221, 23)
         Me.nBox.TabIndex = 5
         '
         'Button1
@@ -150,10 +156,11 @@ Partial Class addForm
         '
         'dpBox
         '
+        Me.dpBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.dpBox.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dpBox.Location = New System.Drawing.Point(36, 206)
         Me.dpBox.Name = "dpBox"
-        Me.dpBox.Size = New System.Drawing.Size(221, 20)
+        Me.dpBox.Size = New System.Drawing.Size(221, 23)
         Me.dpBox.TabIndex = 13
         '
         'Label7
@@ -169,26 +176,28 @@ Partial Class addForm
         '
         'idBox
         '
+        Me.idBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.idBox.Location = New System.Drawing.Point(182, 76)
         Me.idBox.Name = "idBox"
-        Me.idBox.Size = New System.Drawing.Size(75, 20)
+        Me.idBox.Size = New System.Drawing.Size(75, 23)
         Me.idBox.TabIndex = 17
         '
         'mccBox
         '
         Me.mccBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.mccBox.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
         Me.mccBox.FormattingEnabled = True
         Me.mccBox.Items.AddRange(New Object() {"A - General Works", "B - Religion and Philosophy", "C - Auxiliary Science to History", "D - History of the Old World", "E - U.S History", "F - History of the American", "G - Geography and Anthropology", "H - Special Sciences", "J - Political Sciences", "K - Law", "L - Education", "M - Music", "N - Fine Art", "P - Language and Literature", "Q - Math and Science", "R - Medicine", "S - Agriculture", "T - Engineering and Techonology", "U - Military Science", "V - Naval Science", "Z - Library Science"})
         Me.mccBox.Location = New System.Drawing.Point(36, 76)
         Me.mccBox.Name = "mccBox"
-        Me.mccBox.Size = New System.Drawing.Size(139, 21)
+        Me.mccBox.Size = New System.Drawing.Size(139, 24)
         Me.mccBox.TabIndex = 18
         '
         'addForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(283, 381)
+        Me.ClientSize = New System.Drawing.Size(283, 363)
         Me.ControlBox = False
         Me.Controls.Add(Me.mccBox)
         Me.Controls.Add(Me.idBox)

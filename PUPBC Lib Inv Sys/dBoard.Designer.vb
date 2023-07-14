@@ -59,14 +59,14 @@ Partial Class dBoard
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("MS Reference Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(370, 4)
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(0, 4)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(387, 34)
+        Me.Label1.Size = New System.Drawing.Size(1061, 34)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Library Inventory System"
+        Me.Label1.Text = "Automated Library Inventory System"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Button4
         '
@@ -174,7 +174,6 @@ Partial Class dBoard
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "dBoard"
         Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         CType(Me.imageBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
