@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class deleteFunc
-    Private Sub DeleteBook(ByVal bookId As Integer)
+    Private Sub DeleteBook(ByVal bookId As String)
         Dim delquery As String = "DELETE from pupLibBooks where Book_ID = @bookid"
 
         Using connection As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=libinvsystem;Integrated Security=True")
