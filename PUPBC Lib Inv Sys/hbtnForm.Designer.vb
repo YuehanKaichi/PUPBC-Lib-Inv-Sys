@@ -30,6 +30,8 @@ Partial Class hbtnForm
         Me.Button3 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.ccbox = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.dt1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -52,12 +54,12 @@ Partial Class hbtnForm
         '
         'Button6
         '
-        Me.Button6.BackColor = System.Drawing.Color.LightGreen
+        Me.Button6.BackColor = System.Drawing.Color.White
         Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Location = New System.Drawing.Point(817, 38)
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.Location = New System.Drawing.Point(817, 46)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 34)
+        Me.Button6.Size = New System.Drawing.Size(75, 26)
         Me.Button6.TabIndex = 2
         Me.Button6.Text = "Add Book"
         Me.Button6.UseVisualStyleBackColor = False
@@ -101,7 +103,7 @@ Partial Class hbtnForm
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(69, 66)
+        Me.TextBox1.Location = New System.Drawing.Point(69, 53)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(207, 20)
         Me.TextBox1.TabIndex = 8
@@ -109,17 +111,38 @@ Partial Class hbtnForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(22, 69)
+        Me.Label1.Location = New System.Drawing.Point(22, 56)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(41, 13)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Search"
+        '
+        'ccbox
+        '
+        Me.ccbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ccbox.FormattingEnabled = True
+        Me.ccbox.Items.AddRange(New Object() {"All", "A - General Works", "B - Religion and Philosophy", "C - Auxiliary Science to History", "D - History of the Old World", "E - U.S History", "F - History of the American", "G - Geography and Anthropology", "H - Special Sciences", "J - Political Sciences", "K - Law", "L - Education", "M - Music", "N - Fine Art", "P - Language and Literature", "Q - Math and Science", "R - Medicine", "S - Agriculture", "T - Engineering and Techonology", "U - Military Science", "V - Naval Science", "Z - Library Science"})
+        Me.ccbox.Location = New System.Drawing.Point(69, 78)
+        Me.ccbox.Name = "ccbox"
+        Me.ccbox.Size = New System.Drawing.Size(207, 21)
+        Me.ccbox.TabIndex = 10
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(24, 82)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(32, 13)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "Class"
         '
         'hbtnForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(904, 544)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.ccbox)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button3)
@@ -146,4 +169,6 @@ Partial Class hbtnForm
     Friend WithEvents Button3 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents ccbox As ComboBox
+    Friend WithEvents Label2 As Label
 End Class
