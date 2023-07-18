@@ -38,10 +38,11 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(160, 116)
+        Me.Label1.Font = New System.Drawing.Font("MS Reference Sans Serif", 26.75!)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(85, 116)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(580, 39)
+        Me.Label1.Size = New System.Drawing.Size(691, 45)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Automated Library Inventory System"
         '
@@ -49,6 +50,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Firebrick
         Me.ClientSize = New System.Drawing.Size(849, 491)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label1)

@@ -76,7 +76,7 @@ Partial Class returnButtonFunc
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(330, 42)
         Me.Label1.TabIndex = 37
-        Me.Label1.Text = "Delete Books"
+        Me.Label1.Text = "Return Book"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'returnButtonFunc

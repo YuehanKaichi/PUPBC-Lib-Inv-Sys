@@ -1,4 +1,5 @@
-﻿Imports System.Data
+﻿Imports System.Drawing.Imaging
+Imports System.Data
 Imports System.Data.SqlClient
 Public Class Form2
     Dim constr As String = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=libinvsystem;Integrated Security=True"
@@ -23,6 +24,7 @@ Public Class Form2
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         RoundCornerButton(btnRound)
         RoundCornerButton(extbtn)
     End Sub
@@ -75,4 +77,6 @@ Public Class Form2
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles extbtn.Click
         Form1.Close()
     End Sub
+
+
 End Class

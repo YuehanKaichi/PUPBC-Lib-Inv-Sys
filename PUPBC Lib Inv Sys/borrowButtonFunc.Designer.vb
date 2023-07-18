@@ -41,7 +41,7 @@ Partial Class borrowButtonFunc
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Label1.Location = New System.Drawing.Point(11, 69)
+        Me.Label1.Location = New System.Drawing.Point(23, 69)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(80, 16)
         Me.Label1.TabIndex = 0
@@ -51,7 +51,7 @@ Partial Class borrowButtonFunc
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Label2.Location = New System.Drawing.Point(11, 134)
+        Me.Label2.Location = New System.Drawing.Point(26, 159)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(117, 16)
         Me.Label2.TabIndex = 1
@@ -61,7 +61,7 @@ Partial Class borrowButtonFunc
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Label3.Location = New System.Drawing.Point(11, 99)
+        Me.Label3.Location = New System.Drawing.Point(26, 114)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(44, 16)
         Me.Label3.TabIndex = 2
@@ -71,7 +71,7 @@ Partial Class borrowButtonFunc
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Label4.Location = New System.Drawing.Point(11, 168)
+        Me.Label4.Location = New System.Drawing.Point(23, 204)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(58, 16)
         Me.Label4.TabIndex = 3
@@ -80,7 +80,7 @@ Partial Class borrowButtonFunc
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Button1.Location = New System.Drawing.Point(192, 212)
+        Me.Button1.Location = New System.Drawing.Point(170, 252)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 8
@@ -90,7 +90,7 @@ Partial Class borrowButtonFunc
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Button2.Location = New System.Drawing.Point(49, 212)
+        Me.Button2.Location = New System.Drawing.Point(27, 252)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 9
@@ -100,7 +100,7 @@ Partial Class borrowButtonFunc
         'sID
         '
         Me.sID.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.sID.Location = New System.Drawing.Point(127, 62)
+        Me.sID.Location = New System.Drawing.Point(54, 88)
         Me.sID.Name = "sID"
         Me.sID.Size = New System.Drawing.Size(176, 23)
         Me.sID.TabIndex = 10
@@ -108,7 +108,7 @@ Partial Class borrowButtonFunc
         'sName
         '
         Me.sName.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.sName.Location = New System.Drawing.Point(127, 96)
+        Me.sName.Location = New System.Drawing.Point(54, 133)
         Me.sName.Name = "sName"
         Me.sName.Size = New System.Drawing.Size(176, 23)
         Me.sName.TabIndex = 11
@@ -116,7 +116,7 @@ Partial Class borrowButtonFunc
         'cnYeartxt
         '
         Me.cnYeartxt.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.cnYeartxt.Location = New System.Drawing.Point(127, 131)
+        Me.cnYeartxt.Location = New System.Drawing.Point(54, 178)
         Me.cnYeartxt.Name = "cnYeartxt"
         Me.cnYeartxt.Size = New System.Drawing.Size(176, 23)
         Me.cnYeartxt.TabIndex = 12
@@ -124,7 +124,7 @@ Partial Class borrowButtonFunc
         'bID
         '
         Me.bID.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.bID.Location = New System.Drawing.Point(127, 165)
+        Me.bID.Location = New System.Drawing.Point(54, 223)
         Me.bID.Name = "bID"
         Me.bID.Size = New System.Drawing.Size(176, 23)
         Me.bID.TabIndex = 13
@@ -136,7 +136,7 @@ Partial Class borrowButtonFunc
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(320, 59)
+        Me.Panel1.Size = New System.Drawing.Size(255, 59)
         Me.Panel1.TabIndex = 14
         '
         'Label5
@@ -145,7 +145,7 @@ Partial Class borrowButtonFunc
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(0, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(321, 59)
+        Me.Label5.Size = New System.Drawing.Size(255, 59)
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Borrow Book"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -154,7 +154,7 @@ Partial Class borrowButtonFunc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(320, 252)
+        Me.ClientSize = New System.Drawing.Size(255, 292)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.bID)
         Me.Controls.Add(Me.cnYeartxt)
