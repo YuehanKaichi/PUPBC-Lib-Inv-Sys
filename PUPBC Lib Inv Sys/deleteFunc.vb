@@ -1,51 +1,71 @@
 ﻿Imports System.Data.SqlClient
 Public Class deleteFunc
-    Private Sub DeleteBook(ByVal bookId As String)
-        Dim delquery As String = "DELETE from pupLibBooks where Book_ID = @bookid"
 
-        Using connection As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=libinvsystem;Integrated Security=True")
-            Using command As New SqlCommand(delquery, connection)
-                command.Parameters.AddWithValue("@BookID", bookId)
-                Try
-                    ' Show a dialog message
-                    Dim mesresult As DialogResult = MessageBox.Show("Are you sure to delete this book?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
-                    If mesresult = DialogResult.Yes Then
-                        ' Open the database connection
-                        connection.Open()
 
-                        ' Execute the delete command
-                        command.ExecuteNonQuery()
-
-                        'show success message
-                        MessageBox.Show("Book deleted successfully.", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    End If
-
-                Catch ex As Exception
-                    ' Show an error message
-                    MessageBox.Show("Error deleting book: " & ex.Message)
-
-                Finally
-                    ' Close the database connection
-                    connection.Close()
-                End Try
-
-            End Using
-        End Using
-    End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Close()
     End Sub
 
+    Private Function BookExists(bookID As String) As Boolean
+        Dim connectionString As String = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=libinvsystem;Integrated Security=True"
+        Dim query As String = "SELECT COUNT(*) FROM pupLibBooks WHERE book_ID = @BookID"
+
+        Using connection As New SqlConnection(connectionString)
+            Using command As New SqlCommand(query, connection)
+                command.Parameters.AddWithValue("@BookID", bookID)
+                connection.Open()
+                Dim count As Integer = Convert.ToInt32(command.ExecuteScalar())
+                Return count > 0
+            End Using
+        End Using
+    End Function
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'Prompt the user for the book ID to delete
-        Dim bookId As Integer
-        If Integer.TryParse(idBox.Text, bookId) Then
-            ' Call the delete function with the book ID
-            DeleteBook(bookId)
-            idBox.Text = ""
+        Dim bookIDToDelete As String = idBox.Text
+
+        If BookExists(bookIDToDelete) Then
+            Dim connectionString As String = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=libinvsystem;Integrated Security=True"
+            Try
+                ' SQL statements
+                Dim deleteQuery As String = "DELETE FROM pupLibBooks WHERE Book_ID = @BookID"
+
+                Using connection As New SqlConnection(connectionString)
+                    connection.Open()
+                    'dialog
+                    Dim mesresultt As DialogResult = MessageBox.Show("Are you sure to delete this book?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+                    If mesresultt = DialogResult.Yes Then
+                        ' Delete the row from pupLibBorrow table
+                        Using deleteCommand As New SqlCommand(deleteQuery, connection)
+                            deleteCommand.Parameters.AddWithValue("@BookID", idBox.Text)
+                            deleteCommand.ExecuteNonQuery()
+                        End Using
+                        MessageBox.Show("Book successfully deleted", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+
+                        'refresh table
+                        Dim table As New DataTable()
+                        Dim adapter As New SqlDataAdapter("SELECT book_id as 'Book ID', Book_title as 'Book Title', Book_author as 'Author', Date_published as 'Date Published', note as 'note', avail as 'Availability' FROM pupLibBooks ORDER BY book_id ASC", connection)
+                        adapter.Fill(table)
+
+                        hbtnForm.dt1.DataSource = table
+
+                        'count number of books
+                        Dim cmd1 As New SqlCommand("Select count(*) from pupLibBooks", connection)
+                        Dim count1 = Convert.ToString(cmd1.ExecuteScalar)
+                        hbtnForm.numBooks.Text = count1 + " Books"
+                        idBox.Text = ""
+                    End If
+                End Using
+
+
+
+
+            Catch ex As Exception
+                MessageBox.Show("Error Deleting Books" + ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
         Else
-            MessageBox.Show("Invalid Book ID.")
-            idBox.Text = ""
+            ' The book doesn't exist, show an error message.
+            MessageBox.Show("Book not found in the database.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 End Class

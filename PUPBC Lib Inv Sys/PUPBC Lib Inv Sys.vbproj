@@ -47,6 +47,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
@@ -125,6 +128,12 @@
     <Compile Include="borrowButtonFunc.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="buttonBorrowConf.Designer.vb">
+      <DependentUpon>buttonBorrowConf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="buttonBorrowConf.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="cpassForm.Designer.vb">
       <DependentUpon>cpassForm.vb</DependentUpon>
     </Compile>
@@ -172,6 +181,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -201,10 +211,22 @@
     <Compile Include="roundPictureBox.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Update.Designer.vb">
       <DependentUpon>Update.vb</DependentUpon>
     </Compile>
     <Compile Include="Update.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateConf.Designer.vb">
+      <DependentUpon>updateConf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updateConf.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -214,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="borrowButtonFunc.resx">
       <DependentUpon>borrowButtonFunc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buttonBorrowConf.resx">
+      <DependentUpon>buttonBorrowConf.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cpassForm.resx">
       <DependentUpon>cpassForm.vb</DependentUpon>
@@ -248,8 +273,14 @@
     <EmbeddedResource Include="returnButtonFunc.resx">
       <DependentUpon>returnButtonFunc.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Update.resx">
       <DependentUpon>Update.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateConf.resx">
+      <DependentUpon>updateConf.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -264,6 +295,9 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

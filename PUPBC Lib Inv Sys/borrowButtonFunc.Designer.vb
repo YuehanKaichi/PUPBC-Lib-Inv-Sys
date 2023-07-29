@@ -25,13 +25,11 @@ Partial Class borrowButtonFunc
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.sID = New System.Windows.Forms.TextBox()
         Me.sName = New System.Windows.Forms.TextBox()
         Me.cnYeartxt = New System.Windows.Forms.TextBox()
-        Me.bID = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
@@ -67,33 +65,23 @@ Partial Class borrowButtonFunc
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Name"
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Label4.Location = New System.Drawing.Point(23, 204)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 16)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Book ID"
-        '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Button1.Location = New System.Drawing.Point(170, 252)
+        Me.Button1.Location = New System.Drawing.Point(170, 210)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 8
+        Me.Button1.TabIndex = 4
         Me.Button1.Text = "Confirm"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.Button2.Location = New System.Drawing.Point(27, 252)
+        Me.Button2.Location = New System.Drawing.Point(27, 210)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 9
+        Me.Button2.TabIndex = 5
         Me.Button2.Text = "Cancel"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -103,7 +91,7 @@ Partial Class borrowButtonFunc
         Me.sID.Location = New System.Drawing.Point(54, 88)
         Me.sID.Name = "sID"
         Me.sID.Size = New System.Drawing.Size(176, 23)
-        Me.sID.TabIndex = 10
+        Me.sID.TabIndex = 1
         '
         'sName
         '
@@ -111,7 +99,7 @@ Partial Class borrowButtonFunc
         Me.sName.Location = New System.Drawing.Point(54, 133)
         Me.sName.Name = "sName"
         Me.sName.Size = New System.Drawing.Size(176, 23)
-        Me.sName.TabIndex = 11
+        Me.sName.TabIndex = 2
         '
         'cnYeartxt
         '
@@ -119,15 +107,7 @@ Partial Class borrowButtonFunc
         Me.cnYeartxt.Location = New System.Drawing.Point(54, 178)
         Me.cnYeartxt.Name = "cnYeartxt"
         Me.cnYeartxt.Size = New System.Drawing.Size(176, 23)
-        Me.cnYeartxt.TabIndex = 12
-        '
-        'bID
-        '
-        Me.bID.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.bID.Location = New System.Drawing.Point(54, 223)
-        Me.bID.Name = "bID"
-        Me.bID.Size = New System.Drawing.Size(176, 23)
-        Me.bID.TabIndex = 13
+        Me.cnYeartxt.TabIndex = 3
         '
         'Panel1
         '
@@ -154,22 +134,22 @@ Partial Class borrowButtonFunc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(255, 292)
+        Me.ClientSize = New System.Drawing.Size(255, 250)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.bID)
         Me.Controls.Add(Me.cnYeartxt)
         Me.Controls.Add(Me.sName)
         Me.Controls.Add(Me.sID)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "borrowButtonFunc"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "borrowButtonFunc"
+        Me.Text = "Automated Library Inventory System - Borrow Book"
+        Me.TopMost = True
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -179,13 +159,11 @@ Partial Class borrowButtonFunc
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents sID As TextBox
     Friend WithEvents sName As TextBox
     Friend WithEvents cnYeartxt As TextBox
-    Friend WithEvents bID As TextBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label5 As Label
 End Class

@@ -29,10 +29,10 @@ Partial Class Form2
         Me.btnRound = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.pwText = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
-        Me.unText = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.pwText = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
+        Me.unText = New PUPBC_Lib_Inv_Sys.Round_Text_Box()
         Me.logPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -49,9 +49,9 @@ Partial Class Form2
         Me.logPanel.Controls.Add(Me.unText)
         Me.logPanel.Controls.Add(Me.Label1)
         Me.logPanel.Dock = System.Windows.Forms.DockStyle.Right
-        Me.logPanel.Location = New System.Drawing.Point(504, 0)
+        Me.logPanel.Location = New System.Drawing.Point(490, 0)
         Me.logPanel.Name = "logPanel"
-        Me.logPanel.Size = New System.Drawing.Size(345, 491)
+        Me.logPanel.Size = New System.Drawing.Size(359, 491)
         Me.logPanel.TabIndex = 0
         '
         'extbtn
@@ -60,7 +60,7 @@ Partial Class Form2
         Me.extbtn.Location = New System.Drawing.Point(69, 359)
         Me.extbtn.Name = "extbtn"
         Me.extbtn.Size = New System.Drawing.Size(209, 28)
-        Me.extbtn.TabIndex = 7
+        Me.extbtn.TabIndex = 5
         Me.extbtn.Text = "Exit"
         Me.extbtn.UseVisualStyleBackColor = True
         '
@@ -72,7 +72,7 @@ Partial Class Form2
         Me.rmBox.Location = New System.Drawing.Point(69, 302)
         Me.rmBox.Name = "rmBox"
         Me.rmBox.Size = New System.Drawing.Size(118, 20)
-        Me.rmBox.TabIndex = 6
+        Me.rmBox.TabIndex = 3
         Me.rmBox.Text = "Remember me"
         Me.rmBox.UseVisualStyleBackColor = True
         '
@@ -83,7 +83,7 @@ Partial Class Form2
         Me.btnRound.Location = New System.Drawing.Point(69, 322)
         Me.btnRound.Name = "btnRound"
         Me.btnRound.Size = New System.Drawing.Size(209, 26)
-        Me.btnRound.TabIndex = 5
+        Me.btnRound.TabIndex = 4
         Me.btnRound.Text = "Login"
         Me.btnRound.UseVisualStyleBackColor = True
         '
@@ -111,23 +111,6 @@ Partial Class Form2
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Username"
         '
-        'pwText
-        '
-        Me.pwText.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.pwText.Location = New System.Drawing.Point(69, 273)
-        Me.pwText.Name = "pwText"
-        Me.pwText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.pwText.Size = New System.Drawing.Size(209, 23)
-        Me.pwText.TabIndex = 2
-        '
-        'unText
-        '
-        Me.unText.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
-        Me.unText.Location = New System.Drawing.Point(69, 192)
-        Me.unText.Name = "unText"
-        Me.unText.Size = New System.Drawing.Size(209, 23)
-        Me.unText.TabIndex = 1
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -149,9 +132,26 @@ Partial Class Form2
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(507, 491)
+        Me.PictureBox1.Size = New System.Drawing.Size(491, 491)
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
+        '
+        'pwText
+        '
+        Me.pwText.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
+        Me.pwText.Location = New System.Drawing.Point(69, 273)
+        Me.pwText.Name = "pwText"
+        Me.pwText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.pwText.Size = New System.Drawing.Size(209, 23)
+        Me.pwText.TabIndex = 2
+        '
+        'unText
+        '
+        Me.unText.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
+        Me.unText.Location = New System.Drawing.Point(69, 192)
+        Me.unText.Name = "unText"
+        Me.unText.Size = New System.Drawing.Size(209, 23)
+        Me.unText.TabIndex = 1
         '
         'Form2
         '
@@ -162,6 +162,7 @@ Partial Class Form2
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.logPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.logPanel.ResumeLayout(False)

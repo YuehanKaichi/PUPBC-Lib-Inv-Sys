@@ -2,7 +2,8 @@
 Public Class Borrow
     Dim conn As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=libinvsystem;Integrated Security=True")
     Private Sub borBut_Click(sender As Object, e As EventArgs) Handles borBut.Click
-        borrowButtonFunc.Show()
+        buttonBorrowConf.Show()
+        returnButtonFunc.Close()
     End Sub
 
     Private Sub refreshButton_Click(sender As Object, e As EventArgs) Handles statusBox.TextChanged
@@ -54,6 +55,7 @@ Public Class Borrow
 
     Private Sub returnBut_Click(sender As Object, e As EventArgs) Handles returnBut.Click
         returnButtonFunc.Show()
+        borrowButtonFunc.Close()
     End Sub
 
     Private Sub refreshButton_Click_1(sender As Object, e As EventArgs) Handles refreshButton.Click
@@ -102,7 +104,7 @@ Public Class Borrow
     End Sub
 
     Private Sub Borrow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        statusBox.Text = "All"
         Timer1.Enabled = True
 
         'show database to table
@@ -131,7 +133,7 @@ Public Class Borrow
 
                 ' Display the notification message
                 Dim message As String = $"{pastDueCount} borrowed books are past due."
-                NotifyIcon1.ShowBalloonTip(5000, "Past Due Books", message, ToolTipIcon.Warning)
+                NotifyIcon1.ShowBalloonTip(60000, "Past Due Books", message, ToolTipIcon.Warning)
             End Using
         End Using
     End Sub

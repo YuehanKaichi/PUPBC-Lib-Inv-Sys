@@ -75,7 +75,7 @@ Public Class Form2
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles extbtn.Click
-        Form1.Close()
+        Me.Close()
     End Sub
 
 

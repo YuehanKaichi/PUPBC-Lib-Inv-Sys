@@ -4,12 +4,14 @@ Public Class borrowButtonFunc
     Dim connection As New SqlConnection(connectionString)
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Close()
+        buttonBorrowConf.Close()
     End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim studentID As String = sID.Text
         Dim studentName As String = sName.Text
         Dim courseAndYear As String = cnYeartxt.Text
-        Dim bookID As String = bID.Text
+        Dim bookID As String = buttonBorrowConf.idBox.Text
         Dim borrowDate As DateTime = DateTime.Now
         Dim dueDate As DateTime = borrowDate.AddDays(3)
 
@@ -64,6 +66,28 @@ Public Class borrowButtonFunc
             End Using
 
             MessageBox.Show("Book borrowed successfully.", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            sID.Text = ""
+            sName.Text = ""
+            cnYeartxt.Text = ""
+            Me.Close()
+            buttonBorrowConf.idBox.Text = ""
+            buttonBorrowConf.Show()
+
+            'refresh the table
+            connection.Open()
+            Dim table As New DataTable()
+            Dim adapter As New SqlDataAdapter("SELECT pupLibBorrow.studentID as 'Student ID', pupLibBorrow.studentName as 'Student Name',
+        pupLibBorrow.cnYear as 'Course and Year', pupLibBorrow.Book_ID as 'Book ID', 
+        pupLibBooks.Book_title as 'Book Title', 
+        pupLibBorrow.borrowDate as 'Date Borrowed', pupLibBorrow.DueDate as 'Date to be returned' 
+        FROM pupLibBorrow
+        JOIN pupLibBooks ON pupLibBorrow.Book_ID = pupLibBooks.Book_ID;", connection)
+            adapter.Fill(table)
+
+            Borrow.dt1.DataSource = table
+            connection.Close()
+
         Else
             MessageBox.Show("The book is not available.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If

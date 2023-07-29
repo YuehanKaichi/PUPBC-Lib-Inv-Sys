@@ -30,10 +30,10 @@ Partial Class dBoard
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.bb = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.imageBox = New PUPBC_Lib_Inv_Sys.roundPictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ab = New System.Windows.Forms.Button()
         Me.hbtn = New System.Windows.Forms.Button()
+        Me.imageBox = New PUPBC_Lib_Inv_Sys.roundPictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.imageBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -119,16 +119,6 @@ Partial Class dBoard
         Me.Label3.Text = "ID"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'imageBox
-        '
-        Me.imageBox.Image = CType(resources.GetObject("imageBox.Image"), System.Drawing.Image)
-        Me.imageBox.Location = New System.Drawing.Point(19, 20)
-        Me.imageBox.Name = "imageBox"
-        Me.imageBox.Size = New System.Drawing.Size(125, 114)
-        Me.imageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.imageBox.TabIndex = 11
-        Me.imageBox.TabStop = False
-        '
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!)
@@ -161,6 +151,16 @@ Partial Class dBoard
         Me.hbtn.Text = "Home"
         Me.hbtn.UseVisualStyleBackColor = True
         '
+        'imageBox
+        '
+        Me.imageBox.Image = CType(resources.GetObject("imageBox.Image"), System.Drawing.Image)
+        Me.imageBox.Location = New System.Drawing.Point(19, 20)
+        Me.imageBox.Name = "imageBox"
+        Me.imageBox.Size = New System.Drawing.Size(125, 114)
+        Me.imageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.imageBox.TabIndex = 11
+        Me.imageBox.TabStop = False
+        '
         'dBoard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -169,10 +169,11 @@ Partial Class dBoard
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
         Me.Name = "dBoard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "dBoard"
+        Me.Text = "Automated Library Inventory System - Dashboard"
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         CType(Me.imageBox, System.ComponentModel.ISupportInitialize).EndInit()

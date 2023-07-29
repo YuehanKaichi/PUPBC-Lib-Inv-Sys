@@ -83,15 +83,17 @@ Partial Class deleteFunc
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(329, 206)
+        Me.ControlBox = False
         Me.Controls.Add(Me.idBox)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "deleteFunc"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "deleteFunc"
+        Me.Text = "Automated Library Inventory System - Delete Books"
+        Me.TopMost = True
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

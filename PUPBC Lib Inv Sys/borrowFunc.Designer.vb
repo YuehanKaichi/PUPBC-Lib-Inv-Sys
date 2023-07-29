@@ -47,7 +47,6 @@ Partial Class Borrow
         Me.dt1.BackgroundColor = System.Drawing.Color.White
         Me.dt1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dt1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.dt1.Enabled = False
         Me.dt1.GridColor = System.Drawing.Color.White
         Me.dt1.Location = New System.Drawing.Point(0, 105)
         Me.dt1.Name = "dt1"
@@ -112,7 +111,7 @@ Partial Class Borrow
         'Timer1
         '
         Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 15000
+        Me.Timer1.Interval = 60000
         '
         'NotifyIcon1
         '
